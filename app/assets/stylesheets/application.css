@@ -1,0 +1,470 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ */
+
+
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,900);
+* {
+  margin: 0px;
+    font-family: "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+
+  padding: 0px;
+  color: #ADE900; }
+
+html {
+  overflow: scroll;
+  overflow-x: hidden; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */ }
+
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000; }
+
+body {
+	background-color: #333;
+}
+
+a {
+  font-family: "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  text-decoration: none; }
+
+p {
+  letter-spacing: 0px; }
+
+  #particles-js {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+}
+
+footer {
+	z-index: 9999999;
+    position: fixed;
+    top: 95vh;
+    left: 5vh;
+    background-color: #333;
+}
+
+.align {
+	padding: 15px 30px;
+}
+
+.inline-block {
+	display: inline-block;
+}
+.center {
+	text-align: center;
+}
+.social {
+	    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+}
+
+#height_logo {
+  height: 10em;}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+  .bottom_left {
+  position: absolute;
+  display: block !important;
+  top: 92%;
+  left: 3%;
+  transform: translate(-50%, -50%); }
+
+.bottom_right {
+    display: block !important;
+
+  position: absolute;
+  top: 92%;
+  left: 97%;
+  transform: translate(-50%, -50%); }
+
+.top_left {
+	  display: block !important;
+
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  transform: translate(-50%, -50%); }
+
+.top_right {
+	  display: block !important;
+
+  position: absolute;
+  top: 8%;
+  left: 97%;
+  transform: translate(-50%, -50%); }
+
+
+.myText {
+  display: inline-block;
+  color: #6eb500; }
+
+.myText {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important; }
+
+
+.bottom_left:hover .myText {
+  top: 30% !important;
+  display: inline-block;
+  left: 2em !important; }
+
+.top_left:hover .myText {
+  top: 3vh !important;
+    display: inline-block;
+    left: 3.5em !important;
+    width: 7em; }
+
+.bottom_right:hover .myText {
+ top: 3vh !important;
+    display: inline-block;
+    left: -10vh !important; }
+
+
+
+.sidenav {
+  height: 100%;
+  opacity: 0.7;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 80%;
+  background-color: #202629;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+
+.sidenav a {
+  padding: 8px 8px 8px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #6eb500;
+  display: block;
+  transition: 0.3s; }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+
+
+#btn {
+  position: fixed;
+  z-index: 5;
+  cursor: pointer;
+  transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+#btn div {
+  width: 35px;
+  height: 2px;
+  margin-bottom: 8px;
+  background-color: #00DFFC;
+  transition: opacity 500ms, background-color 250ms, -webkit-transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+  transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, background-color 250ms;
+  transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, background-color 250ms, -webkit-transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+#btn.active div {
+  background-color: #343838;
+}
+#btn.active #top {
+  -webkit-transform: translateY(10px) rotate(-135deg);
+          transform: translateY(10px) rotate(-135deg);
+}
+#btn.active #middle {
+  opacity: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+#btn.active #bottom {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
+}
+
+#box {
+  position: fixed;
+  z-index: 4;
+  overflow: auto;
+  top: 0px;
+  right: -275px;
+  width: 275px;
+  opacity: 0;
+  padding: 20px 0px;
+  height: 100%;
+  background-color: #333333;
+  color: #343838;
+  transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+#box.active {
+  right: 0px;
+  opacity: 1;
+}
+
+#items {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#items .itemm {
+  position: relative;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 15px 30px;
+  transition: all 250ms;
+}
+#items .itemm:hover {
+  padding: 15px 45px;
+  background-color: rgba(52, 56, 56, 0.2);
+}
+
+#btn, #btn * {
+  will-change: transform;
+}
+
+#box {
+  will-change: transform, opacity;
+}
+
+@media (min-width: 1200px){
+.container {
+    width: 1100px;
+}}
+
+@media (min-width: 1200px){
+.container {
+    width: 1183px;
+}}
+@media (min-width: 992px){
+.container {
+    width: 970px;
+}}
+@media (min-width: 768px){
+.container {
+    width: 750px;
+}}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vh;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.no-margin {
+    margin: 0 !important;
+}
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+
+
+@supports (display: grid) {
+  body,
+  html {
+    display: block;
+  }
+}
+
+.message {
+  border: 1px solid #d2d0d0;
+  padding: 2em;
+  font-size: 1.7vw;
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+}
+@supports (display: grid) {
+  .message {
+    display: none;
+  }
+}
+
+.section {
+  display: none;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 0;
+  }
+}
+@supports (display: grid) {
+  .section {
+    display: block;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1.5em;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #0c9a9a;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background: url("https://image-store.slidesharecdn.com/5dbc7061-a3ae-43a6-9af5-330f06726e45-original.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  cursor: pointer;
+  counter-increment: item-counter;
+}
+.item:nth-of-type(2n) {
+  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/35833501_1855467191424415_1143475235140403200_o.jpg?_nc_cat=0&oh=77574b376ee475d0843aba88a503b733&oe=5C3AA583");
+}
+
+.item:nth-of-type(3n) {
+  background-image: url("https://image-store.slidesharecdn.com/a515d321-e5f9-44b5-acb8-6fc4ba970b4e-original.png");
+}
+.item:nth-of-type(4n) {
+  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/26170574_1778049429166192_9217842039789120755_o.png?_nc_cat=0&oh=5a73a3bcfd2c637a7331d558cf701fb6&oe=5BF38B37");
+}
+.item:nth-of-type(5n) {
+  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/26171400_1778041425833659_3960473336570869201_o.png?_nc_cat=0&oh=4cec0aad2b5cca1bc0ff17063258b609&oe=5BF232C4");
+}
+.item:nth-of-type(6n) {
+  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/35886250_1855467558091045_5843981331867893760_o.jpg?_nc_cat=0&oh=758edfc5c2a16144da219f9b9a2b1d75&oe=5C31D1B1");
+}
+.item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+.item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.item:hover:after {
+  opacity: 0;
+}
+.item--medium {
+  grid-row-end: span 2;
+}
+.item--large {
+  grid-row-end: span 3;
+}
+.item--full {
+  grid-column-end: auto;
+}
+@media screen and (min-width: 768px) {
+  .item--full {
+    grid-column: 1/-1;
+    grid-row-end: span 2;
+  }
+}
+.item:hover .item__details {
+	display: block;
+}
+.item__details {
+  position: relative;
+  z-index: 1;
+  display: none;
+  padding: 15px;
+  color: #444;
+  background: #333;
+	margin-left: 2%;
+  letter-spacing: 1px;
+  color: #ADE900;
+}
+
+.borderlink {
+	border: 1px solid;
+	padding: 5px;
+}

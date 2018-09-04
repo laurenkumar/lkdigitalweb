@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LK Digital</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	    <%= render 'shared/navbar' %>
+
+    <%= yield %>
+
+    <footer>
+                 <div class="footer-social-icons">
+                    <ul class="social-icons">
+                        <li><a href="http://facebook.com/lkdigital" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://linkedin.com/in/lkdigital/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="text_center display_flex">
+                       © 2018 LK DIGITAL
+                  </div>
+           </footer>
+  </body>
+</html>
