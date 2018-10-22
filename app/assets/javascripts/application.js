@@ -16,6 +16,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require particles.min
+//= require portfolio.jquery.min
 //= require_tree .
 //= require jquery.slick
 
