@@ -5,7 +5,6 @@
 
 		<div class="row">
 			<h1>Notre Histoire</h1>
-			<br>
 			<p>L’agence LK Digital a été créée en 2018 par deux amis qui se sont rencontrés à l’école ETNA (école d’info) et leur passion commune du digital et de l’entrepreneuriat. Découvrant qu’ils avaient tous deux envie d’entreprendre, ils tout d’abord de se lancer en freelance, puis quelques années plus tard de monter leur agence digital LK Digital en combinant une lettre de leurs noms respectif. </p>
 			<br><br>
 			<h2>Freelance – Paris</h2>
@@ -21,10 +20,10 @@
 				<br><br>
 				<h2>Contact Us</h2>
 				<br>
-				<a href="mailto:hello@lkdigital.eu">hello@lkdigital.eu</a>.
+				<a href="mailto:hello@lkdigital.eu">hello@lkdigital.eu</a>
 			</div>
 		
-			<div class="row">
+			<div class="row carousel">
 
 				<div class="responsive">
 					<div class="gallery center">
@@ -72,3 +71,41 @@
 		</div>
 
 	</div>	
+
+	<script>
+		$('.carousel').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+	</script>

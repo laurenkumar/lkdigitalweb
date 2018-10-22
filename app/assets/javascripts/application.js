@@ -15,3 +15,5 @@
 //= require turbolinks
 //= require particles.min
 //= require_tree .
+//= require jquery.slick
+
