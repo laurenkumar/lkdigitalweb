@@ -298,10 +298,14 @@ footer {
     margin: 0 !important;
 }
 
+.gallery.center {
+  border: 1px solid;
+}
 
 div.gallery img {
-    width: 33%;
+        width: 10%;
     height: auto;
+    margin: auto;
 }
 
 div.desc {
