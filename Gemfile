@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
+gem 'ffi', '1.9.18'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
