@@ -296,15 +296,15 @@ footer {
 
 @media screen and (min-width: 426px){
   .top_right img {
-    width: 70% !important;  
+    width: 70% ;  
   }
 
   .bottom_right img {
-    width: 90% !important;
+    width: 90% ;
   }
 
   .top_left img {
-    width: 70% !important;
+    width: 70% ;
   }
 
   .pricing--palden .pricing__deco {
