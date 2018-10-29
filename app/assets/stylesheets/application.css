@@ -294,7 +294,7 @@ footer {
 
 }
 
-@media (min-width: 426px){
+@media screen and (min-width: 426px){
   .top_right img {
     width: 70% !important;  
   }
