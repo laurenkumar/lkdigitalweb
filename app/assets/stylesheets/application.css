@@ -1186,10 +1186,10 @@ input {
 .btn {
   padding: .8em 1.4em;
   font-family: var(--raleway), sans-serif;
-  background: linear-gradient(to right, #FF7679, #FF7DC5);
+  background: #262b38;
   /* font-weight: bold; */
   font-size: 1.2em;
-  color: white;
+  color: #ADE900;
   width: 100%;
   cursor: pointer;
   transition: .3s ease all;
