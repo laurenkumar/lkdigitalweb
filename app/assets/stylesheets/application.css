@@ -294,32 +294,6 @@ footer {
 
 }
 
-@media screen and (min-width: 426px){
-  .top_right img {
-    width: 70% ;  
-  }
-
-  .bottom_right img {
-    width: 90% ;
-  }
-
-  .top_left img {
-    width: 70% ;
-  }
-
-  .pricing--palden .pricing__deco {
-    padding: 17em 20em 20em;
-  }
-
-  .pricing--palden .pricing__item {
-    margin: 4em;
-  }
-
-  .pricing__item {
-    -webkit-flex: 0 1 330px;
-    flex: 0 1 330px;
-  }
-}
 
 .container {
     padding-right: 15px;
@@ -1210,6 +1184,23 @@ input {
 
   &:hover {
     transform: translateY(3px);
+  }
+}
+
+
+@media screen and (min-width: 426px){
+  
+  .pricing--palden .pricing__deco {
+    padding: 17em 20em 20em;
+  }
+
+  .pricing--palden .pricing__item {
+    margin: 4em;
+  }
+
+  .pricing__item {
+    -webkit-flex: 0 1 330px;
+    flex: 0 1 330px;
   }
 }
 
