@@ -1133,27 +1133,6 @@ hr.hr {
   }
 }
 
-[type=text], [type=email], textarea {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #ADE900;
-  box-shadow: none;
-  color: #333;
-
-  &:focus {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--primary);
-    box-shadow: none;
-  }
-
-  &::placeholder {
-    font-family: var(--raleway), sans-serif;
-    font-weight: 300;
-    color: #c7c7c7;
-  }
-}
-
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
     display: block;
     box-sizing: border-box;
@@ -1181,6 +1160,27 @@ hr.hr {
 
 input {
     overflow: visible;
+}
+
+[type=text], [type=email], textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ADE900;
+  box-shadow: none;
+  color: #333;
+
+  &:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    font-family: var(--raleway), sans-serif;
+    font-weight: 300;
+    color: #c7c7c7;
+  }
 }
 
 .btn {
