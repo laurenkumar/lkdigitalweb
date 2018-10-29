@@ -1,4 +1,4 @@
-<% if current_page? ('/work') || current_page?('/us') %>
+<% if !current_page? root_path  %>
 
 <% else %>
 <%= link_to work_path, id: 'work_project', class: 'bottom_right' do %>
