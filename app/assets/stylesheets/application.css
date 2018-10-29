@@ -710,33 +710,6 @@ hr.hr {
     background: #262b38;
 }
 
-@media screen and (max-width:600px) {
-  .work-item {
-    margin: 5em 1em;
-  }
-  .work-item__img {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .work-item__info {
-    margin-left: 0;
-    margin-right: 0;
-    transform: none !important;
-  }
-
-  .top_right img {
-    width: unset !important;  
-  }
-
-  .bottom_right img {
-    width: unset !important;
-  }
-
-  .top_left img {
-    width: unset !important;
-  }
-}
-
 @media (min-width:600px) {
     .work-item__info {
         position: absolute;
@@ -1131,6 +1104,31 @@ hr.hr {
       padding: 0;
     }
   }
+
+  .top_right img {
+    width: unset !important;  
+  }
+
+  .bottom_right img {
+    width: unset !important;
+  }
+
+  .top_left img {
+    width: unset !important;
+  }
+
+  .pricing--palden .pricing__deco {
+    padding: 17em 20em 20em;
+  }
+
+  .pricing--palden .pricing__item {
+    margin: 4em;
+  }
+
+  .pricing__item {
+    -webkit-flex: 0 1 330px;
+    flex: 0 1 330px;
+  }
 }
 
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
@@ -1223,7 +1221,6 @@ input {
   }
 
   .pricing--palden .pricing__deco {
-   
     padding: 17em 20em 20em;
   }
 
