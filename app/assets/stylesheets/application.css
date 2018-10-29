@@ -737,7 +737,7 @@ hr.hr {
   }
 }
 
-@media (max-width:600px) {
+@media screen and (max-width:600px) {
   .top_right img {
     width: unset !important;  
   }
