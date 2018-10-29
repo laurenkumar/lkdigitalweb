@@ -683,20 +683,6 @@ hr.hr {
     }
 }
 
-@media (min-width:320px) and (max-width: 425px) {
-  .top_right img {
-    width: unset !important;  
-  }
-
-  .bottom_right img {
-    width: unset !important;
-  }
-
-  .top_left img {
-    width: unset !important;
-  }
-}
-
 .work-item__img img {
     width: 100%;
     -ms-transform: scale(1.05);
@@ -736,6 +722,18 @@ hr.hr {
     margin-left: 0;
     margin-right: 0;
     transform: none !important;
+  }
+
+  .top_right img {
+    width: unset !important;  
+  }
+
+  .bottom_right img {
+    width: unset !important;
+  }
+
+  .top_left img {
+    width: unset !important;
   }
 }
 
