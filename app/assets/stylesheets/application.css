@@ -107,7 +107,7 @@ footer {
   transform: translate(-50%, -50%); }
 
 .bottom_right img {
-  width: 90%;
+  width: unset;
 }
 
 .top_left img {
@@ -115,7 +115,7 @@ footer {
 }
 
 .top_right img {
-  width: 90%;
+  width: unset;
 }
 .top_left {
 	  display: block !important;
