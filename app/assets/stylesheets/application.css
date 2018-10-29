@@ -737,6 +737,21 @@ hr.hr {
   }
 }
 
+@media (max-width:600px) {
+  .top_right img {
+    width: unset !important;  
+  }
+
+  .bottom_right img {
+    width: unset !important;
+  }
+
+  .top_left img {
+    width: unset !important;
+  }
+}
+
+
 @media (min-width:600px) {
     .work-item__info {
         position: absolute;
