@@ -1,77 +1,84 @@
-  
-<ul class="thumbs">
-            <li><a href="#thumb1" class="thumbnail" style="background-image: url('https://image-store.slidesharecdn.com/5dbc7061-a3ae-43a6-9af5-330f06726e45-original.png')">
-                <h4>LK Travels</h4><span class="description">Travel Blog</span></a>
-            </li>
-            <li>
-                <a href="#thumb2" class="thumbnail" style="background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/35833501_1855467191424415_1143475235140403200_o.jpg?_nc_cat=0&oh=77574b376ee475d0843aba88a503b733&oe=5C3AA583')"><h4>AtypikHouse</h4><span class="description">AirBnb Like Website and App</span></a>
-            </li>
-            <li>
-                <a href="#thumb3" class="thumbnail" style="background-image: url('https://image-store.slidesharecdn.com/a515d321-e5f9-44b5-acb8-6fc4ba970b4e-original.png')"><h4>Yakoi</h4><span class="description">Podcast Blog</span></a>
-            </li>
-            <li>
-                <a href="#thumb4" class="thumbnail" style="background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/26170574_1778049429166192_9217842039789120755_o.png?_nc_cat=0&oh=5a73a3bcfd2c637a7331d558cf701fb6&oe=5BF38B37')"><h4>Portfolio</h4><span class="description">Administrable Portfolio</span></a>
-            </li>
-            <li>
-                <a href="#thumb5" class="thumbnail" style="background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/26171400_1778041425833659_3960473336570869201_o.png?_nc_cat=0&oh=4cec0aad2b5cca1bc0ff17063258b609&oe=5BF232C4')"><h4>Uthaya</h4><span class="description">Static Website</span></a>
-            </li>
-            <li>
-                <a href="#thumb6" class="thumbnail" style="background-image: url('https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/35886250_1855467558091045_5843981331867893760_o.jpg?_nc_cat=0&oh=758edfc5c2a16144da219f9b9a2b1d75&oe=5C31D1B1')"><h4>Youtransactor</h4><span class="description">Company Website</span></a>
-            </li>
+<!-- portfolio -->
+<section class="work-section" id="projects">
+  <div class="wrapper">
+    <h4 class="text-center work-wrapper-head">Projects</h4>
+    <hr class="hr">
+
+    <div class="site-section -active">
+      
+      <div class="work">
+        <article class="work-item" itemscope itemtype="http://schema.org/Thing">
+          <a itemprop="url" href="lktravel.html" class="work-item__img">
             
-        </ul>
-
-        <div class="portfolio-content">
-            <div id="thumb1">
-                <div class="media"><img src="https://image-store.slidesharecdn.com/5dbc7061-a3ae-43a6-9af5-330f06726e45-original.png" /></div>
-                <h1>Web Site</h1>
-                <p>LK TRAVELS, a travel blog with interactive maps, made with node js and mongo db..</p>
-                <a href="http://lktravels.fr" class="btn btn-primary">Learn More</a>
+            <%= image_tag 'lktravel.png', alt: 'LK Travels - Travel blog with interactive maps' %>
+          </a>
+          <div class="work-item__info" style="transform: translate3d(0px, -40%, 0px);">
+            <div class="work-item__info--box">
+              <h3 itemprop="name">LK Travels</h3>
+              <p itemprop="description">Travel blog with interactive map and storytelling.</p>
+              <a itemprop="url" href="lktravel.html" class="flip-btn flip-btn--white"><span>Case Study</span></a>
             </div>
+          </div>
+        </article>
 
-            <div id="thumb2">
-                <div class="media"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/35833501_1855467191424415_1143475235140403200_o.jpg?_nc_cat=0&oh=77574b376ee475d0843aba88a503b733&oe=5C3AA583"/></div>
-                <h1>Web Site And App</h1>
-                <p>Atypik House, website like AirBnb like but for insolite rentals, done in ruby on rails and react native.</p>
-                <a href="https://atypikhouse.herokuapp.com" class="btn btn-primary">Learn More</a>
+        <article class="work-item" itemscope itemtype="http://schema.org/Thing">
+          <a itemprop="url" href="atypikHouse.html" class="work-item__img">
+            
+            <%= image_tag 'atypik.jpg', alt: 'AtypikHouse - AirBnB like website and app.' %>
+          </a>
+          <div class="work-item__info" style="transform: translate3d(0px, 9.55975%, 0px);">
+            <div class="work-item__info--box">
+              <h3 itemprop="name">AtypikHouse</h3>
+              <p itemprop="description">AtypikHouse is a platform where you can find odd places to rent and spend a night to.</p>
+              <a itemprop="url" href="atypikHouse.html" class="flip-btn flip-btn--white"><span>Case Study</span></a>
             </div>
+          </div>
+        </article>
 
-            <div id="thumb3">
-                <div class="media"><img src="https://image-store.slidesharecdn.com/a515d321-e5f9-44b5-acb8-6fc4ba970b4e-original.png"/></div>
-                <h1>Web Site</h1>
-                <p>Yakoi, podcast blog of 3 friends who like to talk about rap</p>
-                <a href="http://yakoitalkshow.over-blog.com/" class="btn btn-primary">Learn More</a>
+        <article class="work-item" itemscope itemtype="http://schema.org/Thing">
+          <a itemprop="url" href="http://yakoitalkshow.over-blog.com/" class="work-item__img">
+            
+            <%= image_tag 'yakoi.png', alt: 'Yakoi Podcast Blog.' %>
+          </a>
+          <div class="work-item__info" style="transform: translate3d(0px, -40%, 0px);">
+            <div class="work-item__info--box">
+              <h3 itemprop="name">Yakoi</h3>
+              <p itemprop="description">Listen to 3 french friends talk about rap.</p>
+              <a itemprop="url" href="http://yakoitalkshow.over-blog.com/" class="flip-btn flip-btn--white">Go listen to them</a>
             </div>
+          </div>
+        </article>
 
-            <div id="thumb4">
-                <div class="media"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/26170574_1778049429166192_9217842039789120755_o.png?_nc_cat=0&oh=5a73a3bcfd2c637a7331d558cf701fb6&oe=5BF38B37"/></div>
-                <h1>Web Site</h1>
-                <p>Example of a portfolio website with an adminin panel to add project easily without anymore coding</p>
-                <a href="http://dorian.lkdigital.eu" class="btn btn-primary">Learn More</a>
+        <article class="work-item" itemscope itemtype="http://schema.org/Thing">
+          <a itemprop="url" href="http://uthaya.fr" class="work-item__img">
+            
+            <%= image_tag 'uthaya.png', alt: 'Uthaya.fr' %>
+          </a>
+          <div class="work-item__info" style="transform: translate3d(0px, -40%, 0px);">
+            <div class="work-item__info--box">
+              <h3 itemprop="name">Uthaya.fr</h3>
+              <p itemprop="description">Tamil professor and youtube creator, she sells her own course to learn tamil through french</p>
+              <a itemprop="url" href="http://uthaya.fr" class="flip-btn flip-btn--white"><span>Check It Out</span></a>
             </div>
+          </div>
+        </article>
 
-            <div id="thumb5">
-                <div class="media"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/26171400_1778041425833659_3960473336570869201_o.png?_nc_cat=0&oh=4cec0aad2b5cca1bc0ff17063258b609&oe=5BF232C4"/></div>
-                <h1>Web Site</h1>
-                <p>Showcase Website to demonstrate the activities and abilities of the client. Done in html, css, javascript</p>
-                <a href="http://uthaya.fr" class="btn btn-primary">Learn More</a>
+        <article class="work-item" itemscope itemtype="http://schema.org/Thing">
+          <a itemprop="url" href="#" class="work-item__img">
+            
+            <%= image_tag 'youtransactor.jpg', alt: 'Youtransactor' %>
+          </a>
+          <div class="work-item__info" style="transform: translate3d(0px, -40%, 0px);">
+            <div class="work-item__info--box">
+              <h3 itemprop="name">Youtransactor</h3>
+              <p itemprop="description">Company website, manufactoring and seller of solutions for contraventions terminals and others</p>
+              <a itemprop="url" href="http://youtransactor.com" class="flip-btn flip-btn--white"></a>
             </div>
+          </div>
+        </article>
 
-            <div id="thumb6">
-                <div class="media"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/35886250_1855467558091045_5843981331867893760_o.jpg?_nc_cat=0&oh=758edfc5c2a16144da219f9b9a2b1d75&oe=5C31D1B1"/></div>
-                <h1>Web Site</h1>
-                <p>YouTransactor, website for YouTransactor, admin panel to modify and edit almost all the site, done in nodejs and mongodb</p>
-                <a href="http://youtransactor.com" class="btn btn-primary">Learn More</a>
-            </div>
+      </div>
+    </div>
 
-        </div>
-
-
-<script>
-            $(document).ready(function() {
-                $('.thumbs').portfolio({
-                    cols: 4,
-                    transition: 'slideDown'
-                });
-            });
-        </script>
+  </div>
+</section>
