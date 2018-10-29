@@ -375,31 +375,6 @@ div.desc {
     .responsive {
         width: 100%;
     }
-
-    .top_right img {
-    width: unset !important;  
-  }
-
-  .bottom_right img {
-    width: unset !important;
-  }
-
-  .top_left img {
-    width: unset !important;
-  }
-
-  .pricing--palden .pricing__deco {
-    padding: 17em 20em 20em;
-  }
-
-  .pricing--palden .pricing__item {
-    margin: 4em;
-  }
-
-  .pricing__item {
-    -webkit-flex: 0 1 330px;
-    flex: 0 1 330px;
-  }
 }
 
 
@@ -1160,30 +1135,6 @@ hr.hr {
     }
   }
 
-  .top_right img {
-    width: unset !important;  
-  }
-
-  .bottom_right img {
-    width: unset !important;
-  }
-
-  .top_left img {
-    width: unset !important;
-  }
-
-  .pricing--palden .pricing__deco {
-    padding: 17em 20em 20em;
-  }
-
-  .pricing--palden .pricing__item {
-    margin: 4em;
-  }
-
-  .pricing__item {
-    -webkit-flex: 0 1 330px;
-    flex: 0 1 330px;
-  }
 }
 
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
@@ -1262,29 +1213,3 @@ input {
   }
 }
 
-@media screen and (max-width:600px) {
-  .top_right img {
-    width: unset !important;  
-  }
-
-  .bottom_right img {
-    width: unset !important;
-  }
-
-  .top_left img {
-    width: unset !important;
-  }
-
-  .pricing--palden .pricing__deco {
-    padding: 17em 20em 20em;
-  }
-
-  .pricing--palden .pricing__item {
-    margin: 4em;
-  }
-
-  .pricing__item {
-    -webkit-flex: 0 1 330px;
-    flex: 0 1 330px;
-  }
-}
