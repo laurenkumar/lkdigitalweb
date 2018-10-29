@@ -1188,7 +1188,7 @@ input {
 }
 
 
-@media screen and (min-width: 426px){
+@media screen and (max-width: 426px){
   
   .pricing--palden .pricing__deco {
     padding: 17em 20em 20em;
@@ -1201,6 +1201,7 @@ input {
   .pricing__item {
     -webkit-flex: 0 1 330px;
     flex: 0 1 330px;
+    font-size: large;
   }
 }
 
