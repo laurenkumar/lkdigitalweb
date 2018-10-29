@@ -956,8 +956,8 @@ hr.hr {
   -webkit-align-items: stretch;
   align-items: stretch;
   text-align: center;
-  -webkit-flex: 0 1 330px;
-  flex: 0 1 330px;
+  -webkit-flex: 0 1 250px;
+  flex: 0 1 250px;
 }
 
 .pricing__feature-list {
@@ -1087,10 +1087,10 @@ hr.hr {
 /* ============================== contact ====================================*/
 .contact-section {
   background: whitesmoke;
-  padding: 120px 120px 130px 120px;
-
+  padding: 50px 50px 60px 50px;
+  
   &-head {
-    color: var(--primary);
+    color: #262b38;
     font-weight: 300;
     font-size: 2em;
   }
@@ -1100,7 +1100,7 @@ hr.hr {
     font-weight: 300;
     margin-bottom: .5em;
     font-size: 1.4em;
-    color: var(--darker);
+    color: #262b38;
 
     a {
       color: var(--dodger-blue);
@@ -1136,7 +1136,7 @@ hr.hr {
 [type=text], [type=email], textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--dodger-blue);
+  border-bottom: 1px solid #ADE900;
   box-shadow: none;
   color: #333;
 
@@ -1152,6 +1152,35 @@ hr.hr {
     font-weight: 300;
     color: #c7c7c7;
   }
+}
+
+[type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 39px;
+    height: 2.4375rem;
+    margin: 0 0 16px;
+    margin: 0 0 1rem;
+    padding: 8px;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px rgba(10,10,10,.1);
+    font-family: inherit;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input {
+    overflow: visible;
 }
 
 .btn {
