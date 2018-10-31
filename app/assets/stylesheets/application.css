@@ -615,6 +615,10 @@ hr.hr {
 
 .footer {
   top: 12rem;
+  position: relative;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  transition: all 250ms;
 }
 
 .work-item {
