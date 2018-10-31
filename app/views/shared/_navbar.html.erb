@@ -57,7 +57,7 @@
         <a href="http://facebook.com/lkdigital" class=""><i class="fa fa-facebook 3x"></i></a>
       </div>
     </div>
-    <div class="itemm footer">© 2018 LK DIGITAL</div>
+    <div class="itemm footer">© <div id="footer"></div> LK DIGITAL</div>
   </div>
 </div>
 
@@ -86,4 +86,11 @@
       sidebarBox.classList.remove('active');
     }
   });
+
+function myFunction() {
+    var d = new Date();
+    var n = d.getFullYear();
+    document.getElementById("footer").innerHTML = n;
+}
+
 </script>
