@@ -961,7 +961,7 @@ hr.hr {
   font-family: "Nunito", sans-serif;
   cursor: default;
   color: #84697c;
-  background: #fff;
+  background: #ADE900;
   box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
   border-radius: 0;
   margin: 1em;
@@ -1004,7 +1004,7 @@ hr.hr {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: #fff;
+  color: #ADE900;
 }
 
 .pricing--palden .deco-layer {
