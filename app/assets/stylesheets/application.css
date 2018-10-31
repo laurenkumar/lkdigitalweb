@@ -66,6 +66,10 @@ footer {
     background-color: #262b38;
 }
 
+.firstpad {
+      padding-left: 30px;
+}
+
 .align {
 	padding: 15px 30px;
 }
@@ -607,6 +611,10 @@ hr.hr {
 
 .flip-btn--grey {
   color: #a0a0a0
+}
+
+.footer {
+  top: 92%;
 }
 
 .work-item {
