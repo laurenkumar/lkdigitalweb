@@ -14,6 +14,13 @@
 </div>
 <%= image_tag 'us.png', alt: 'contact and information link lkdigital' %>
 <% end %>
+
+<%= link_to educ_path, class: 'bottom_right' do %>
+<div class="myText">
+
+</div>
+<%= image_tag 'educ.png', alt: 'Education link lkdigital' %>
+<% end %>
 <% end %>
 
 <div id="btn" class="top_right">
@@ -25,6 +32,7 @@
 
     <div class="itemm"><%= link_to "ABOUT US", us_path %></div>
     <div class="itemm"><%= link_to "PROJECTS", work_path%></div>
+    <div class="itemm"><%= link_to "EDUCATION", educ_path%></div>
     <div class="itemm inline-block center">
       <div class="social">
         <a href="http://facebook.com/lkdigital" class=""><i class="fa fa-facebook 3x"></i></a>
@@ -36,6 +44,7 @@
       </div>
 
     </div>
+    <div class="itemm">© 2018 LK DIGITAL</div>
   </div>
 </div>
 

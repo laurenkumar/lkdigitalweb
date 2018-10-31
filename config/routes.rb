@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   get 'work' => 'pages#work'
   get 'us' => 'pages#us'
+  get 'educ' => 'pages#educ'
+
 end
