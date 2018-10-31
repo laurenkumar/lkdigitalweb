@@ -87,10 +87,12 @@
     }
   });
 
-function myFunction() {
+  function myFunction() {
     var d = new Date();
     var n = d.getFullYear();
     document.getElementById("footer").innerHTML = n;
-}
+  }
+  window.onload = myFunction;
+
 
 </script>
