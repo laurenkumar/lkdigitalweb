@@ -326,7 +326,7 @@ footer {
 }
 
 div.gallery img {
-        width: 10%;
+        width: 15%;
     height: auto;
     margin: auto;
 }
@@ -811,6 +811,7 @@ hr.hr {
 
 .gallery.center {
   font-size: 22px;
+  height: 230px;
 }
 
 
