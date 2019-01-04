@@ -795,7 +795,7 @@ hr.hr {
 }
 
 
-@media (min-width:200px) {
+@media screen and (min-width:200px) {
   #box {
       width: 100%;
       text-align: center;
@@ -806,7 +806,7 @@ hr.hr {
     }
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   #box {
     position: fixed;
     z-index: 4;
