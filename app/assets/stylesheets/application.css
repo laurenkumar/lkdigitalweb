@@ -809,9 +809,17 @@ hr.hr {
     }
 }
 
-.gallery.center {
+@media (min-width: 500px) {
+  .gallery.center {
     font-size: 1.3em !important;
+  }
 }
+@media (min-width: 200px) {
+  .gallery.center {
+    font-size: 2em !important;
+  }
+}
+
 
 
 /* ============================= overlay =======================================*/
