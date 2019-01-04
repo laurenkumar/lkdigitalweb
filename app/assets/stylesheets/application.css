@@ -797,33 +797,12 @@ hr.hr {
 
 
 
-@media (min-width: 600px) {
-  #box.active {
-    position: fixed;
-    z-index: 4;
-    overflow: auto;
-    top: 0px;
-    right: -275px;
-    width: 275px;
-    opacity: 0;
-    text-align: initial;
-    font-size: initial;
-    padding: 20px 0px;
-    height: 100%;
-    background-color: #262b38;
-    color: #343838;
-    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
-  }
-  .firstpad {
-      padding-left: 30px;
-    }
-}
 
 @media (min-width:200px) {
   #box.active {
       width: 100%;
       text-align: center;
-      font-size: 3em;
+      font-size: 1em;
     }
     .firstpad {
       padding-left: 0px;
