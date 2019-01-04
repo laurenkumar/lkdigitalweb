@@ -811,12 +811,12 @@ hr.hr {
 
 @media (min-width: 500px) {
   .gallery.center {
-    font-size: 1.3em !important;
+    font-size: 1.3em;
   }
 }
 @media (min-width: 200px) {
   .gallery.center {
-    font-size: 2em !important;
+    font-size: 2em;
   }
 }
 
