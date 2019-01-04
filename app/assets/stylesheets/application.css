@@ -980,8 +980,8 @@ hr.hr {
   -webkit-align-items: stretch;
   align-items: stretch;
   text-align: center;
-  -webkit-flex: 0 1 250px;
-  flex: 0 1 250px;
+  -webkit-flex: 3;
+  flex: 3;
 }
 
 .pricing__feature-list {
