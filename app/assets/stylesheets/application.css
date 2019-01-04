@@ -809,11 +809,10 @@ hr.hr {
     }
 }
 
-@media screen and (min-width: 200px) {
-  .gallery.center {
-    font-size: 20px;
-  }
+.gallery.center {
+  font-size: 22px;
 }
+
 
 
 
