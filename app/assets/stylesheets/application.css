@@ -819,7 +819,7 @@ hr.hr {
     }
 }
 
-@media screen and (max-width: 599px) and (min-width: 200px)  {
+@media screen and (min-width: 200px) and (max-width: 599px)  {
   #box {
       width: 100%;
       text-align: center;
