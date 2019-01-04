@@ -797,17 +797,17 @@ hr.hr {
 
 
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   #box {
     position: fixed;
     z-index: 4;
     overflow: auto;
     top: 0px;
     right: -275px;
-    width: 275px !important;
+    width: 275px;
     opacity: 0;
-    text-align: initial !important;
-    font-size: initial !important;
+    text-align: initial;
+    font-size: initial;
     padding: 20px 0px;
     height: 100%;
     background-color: #262b38;
@@ -819,7 +819,7 @@ hr.hr {
     }
 }
 
-@media screen and (min-width:200px) {
+@media (min-width:200px) {
   #box {
       width: 100%;
       text-align: center;
