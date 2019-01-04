@@ -794,7 +794,7 @@ hr.hr {
     }
 }
 
-@media (max-width:500px) {
+@media (min-width:500px) {
   #box {
       width: 100%;
       text-align: center;
