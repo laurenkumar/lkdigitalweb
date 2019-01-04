@@ -804,10 +804,10 @@ hr.hr {
     overflow: auto;
     top: 0px;
     right: -275px;
-    width: 275px;
+    width: 275px !important;
     opacity: 0;
-    text-align: initial;
-    font-size: initial;
+    text-align: initial !important;
+    font-size: initial !important;
     padding: 20px 0px;
     height: 100%;
     background-color: #262b38;
