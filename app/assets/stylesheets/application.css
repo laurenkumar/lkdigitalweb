@@ -795,16 +795,7 @@ hr.hr {
 }
 
 
-@media screen and (min-width:200px) {
-  #box {
-      width: 100%;
-      text-align: center;
-      font-size: 3em;
-    }
-    .firstpad {
-      padding-left: 0px;
-    }
-}
+
 
 @media screen and (min-width: 600px) {
   #box {
@@ -825,6 +816,17 @@ hr.hr {
   }
   .firstpad {
       padding-left: 30px;
+    }
+}
+
+@media screen and (min-width:200px) {
+  #box {
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+    }
+    .firstpad {
+      padding-left: 0px;
     }
 }
 
