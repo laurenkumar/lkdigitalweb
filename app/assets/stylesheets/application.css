@@ -815,6 +815,8 @@ hr.hr {
     right: -275px;
     width: 275px;
     opacity: 0;
+    text-align: initial;
+    font-size: initial;
     padding: 20px 0px;
     height: 100%;
     background-color: #262b38;
