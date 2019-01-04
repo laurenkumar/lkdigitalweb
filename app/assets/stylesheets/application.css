@@ -99,7 +99,7 @@ footer {
   position: fixed;
   display: block !important;
   top: 92%;
-  left: 3%;
+  left: 5%;
   transform: translate(-50%, -50%); }
 
 .bottom_right {
@@ -107,7 +107,7 @@ footer {
 
   position: fixed;
   top: 92%;
-  left: 97%;
+  left: 95%;
   transform: translate(-50%, -50%); }
 
 .bottom_right img {
@@ -130,7 +130,7 @@ footer {
 
   position: fixed;
   top: 8%;
-  left: 4%;
+  left: 5%;
   transform: translate(-50%, -50%); }
 
 .top_right {
