@@ -1,31 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>LK Digital</title>
-  <%= csrf_meta_tags %>
+  <head>
+    <title>LK Digital</title>
+    <%= csrf_meta_tags %>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag :modernizr %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag :modernizr %>
+  </head>
 
-<body >
-  <ul id="myMenu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-    <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-  </ul>
+  <body >
+  	    <%= render 'shared/navbar' %>
 
-  <%= yield %>
-  <script>
-    
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['firstPage', 'secondPage', 'thirdPage'],
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['First page', 'Second page', 'Third and last page']
-    });
-  </script>
-</body>
+    <%= yield %>
+        <%= javascript_include_tag 'application' %>
+  </body>
 </html>

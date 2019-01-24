@@ -14,9 +14,11 @@
 //= require activestorage
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
-//= require fullpage
+//= require vue
+//= require vue-router (optional)
+//= require vue-resource (optional)
+//= require vuex
 //= require particles.min
 //= require portfolio.jquery.min
 //= require_tree .
