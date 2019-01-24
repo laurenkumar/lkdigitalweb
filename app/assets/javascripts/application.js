@@ -16,6 +16,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require fullpage
 //= require particles.min
 //= require portfolio.jquery.min
 //= require_tree .
