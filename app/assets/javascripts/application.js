@@ -16,8 +16,8 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require vue
-//= require vue-router (optional)
-//= require vue-resource (optional)
+//= require vue-router
+//= require vue-resource
 //= require vuex
 //= require particles.min
 //= require portfolio.jquery.min
