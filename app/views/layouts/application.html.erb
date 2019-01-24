@@ -12,5 +12,19 @@
   <body >
 
     <%= yield %>
+    <script>
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+    //options here
+    autoScrolling:true,
+    scrollHorizontally: true,
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+    menu: '#myMenu'
+  });
+
+    //methods
+    $.fn.fullpage.setAllowScrolling(false);
+  });
+</script>
   </body>
 </html>
