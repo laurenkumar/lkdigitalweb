@@ -19,16 +19,13 @@
 
   <%= yield %>
   <script>
-    $('#fullpage').fullpage({
-    //options here
-    autoScrolling:true,
-    scrollHorizontally: true,
-    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    menu: '#myMenu'
-  });
-
-    //methods
-    $.fn.fullpage.setAllowScrolling(false);
-</script>
+    
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', 'thirdPage'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page']
+    });
+  </script>
 </body>
 </html>
