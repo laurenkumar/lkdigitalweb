@@ -118,22 +118,38 @@
   <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-cubes " style="font-size: 1.5em;margin-left: 11%; margin-top: 6%;" aria-hidden="true"></i></div>
 </div>
 <div id="nav1" class="navsecond nav1 diamond">
-  <div class="rotCorrect"><i class="fa fa-home" style="font-size: 1.5em; margin-left: 10%;
-    margin-top: 16%;" aria-hidden="true"></i></div>
+  <div class="rotCorrect">
+    <a href="/">
+      <i class="fa fa-home" style="font-size: 1.5em; margin-left: 10%;
+      margin-top: 16%;" aria-hidden="true"></i>
+    </a>
+  </div>
 </div>
 <!--<div class="popUp">Home</div>-->
 <div id="nav2" class="navsecond nav2 diamond">
-  <div class="rotCorrect"><i class="fas fa-user-astronaut" style="font-size: 1.5em; margin-left: 17%;
-    margin-top: 16%;" aria-hidden="true"></i></div>
+  <div class="rotCorrect">
+    <a href="/us">
+      <i class="fas fa-user-astronaut" style="font-size: 1.5em; margin-left: 17%;
+      margin-top: 16%;" aria-hidden="true"></i>
+    </a>
+  </div>
 </div>
 <div id="nav3" class="navsecond nav3 diamond">
-  <div class="rotCorrect"><i class="fas fa-project-diagram" style="font-size: 1.5em; margin-left: 11%;
-    margin-top: 25%;" aria-hidden="true"></i></div>
+  <div class="rotCorrect">
+    <a href="/projects">
+      <i class="fas fa-project-diagram" style="font-size: 1.5em; margin-left: 11%;
+      margin-top: 25%;" aria-hidden="true"></i>
+    </a>
+  </div>
 </div>
 <div id="nav4" class="navsecond nav4 diamond">
-  <div class="rotCorrect"><i class="fas fa-robot" style="font-size: 1.5em; margin-left: 11%;
-    margin-top: 17%;
-" aria-hidden="true"></i></div>
+  <div class="rotCorrect">
+    <a href="/education">
+      <i class="fas fa-robot" style="font-size: 1.5em; margin-left: 11%;
+      margin-top: 17%;
+      " aria-hidden="true"></i>
+    </a>
+  </div>
 </div>
 
 <script >
@@ -165,15 +181,15 @@
     init();
   })();
 
-$(document).ready(function() {
-  $("#navMenu").click(function() {
+  $(document).ready(function() {
+    $("#navMenu").click(function() {
    //$(".nav").toggleClass("small");
-    if ($(".navsecond").hasClass("smallsecond")) {
-      $(".navsecond").removeClass("smallsecond");
-    } else {
-      $(".navsecond").addClass("smallsecond");
-    }
-  });
+   if ($(".navsecond").hasClass("smallsecond")) {
+    $(".navsecond").removeClass("smallsecond");
+  } else {
+    $(".navsecond").addClass("smallsecond");
+  }
 });
+  });
 
 </script>
