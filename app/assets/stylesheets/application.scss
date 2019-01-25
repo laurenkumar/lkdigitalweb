@@ -1621,17 +1621,17 @@ body.nav-active{
 
 
 #navMenu {
-  top: 150px;
-  left: 200px;
-  width: 140px;
-  height: 140px;
-  z-index: 100;
-  background: linear-gradient(90deg, #910EC9, #d350db, #910EC9);
-  -webkit-background: linear-gradient(90deg, #910EC9, #d350db, #910EC9);
-  background-size: 400% 400%;
-  -webkit-background-size: 400% 400%;
-  animation: gradient 5s infinite;
-  -webkit-animation: gradient 5s infinite;
+    top: 87%;
+    left: 3%;
+    width: 65px;
+    height: 65px;
+    z-index: 100;
+    background: linear-gradient(90deg, #910EC9, #d350db, #910EC9);
+    -webkit-background: linear-gradient(90deg, #910EC9, #d350db, #910EC9);
+    background-size: 400% 400%;
+    -webkit-background-size: 88% 166%;
+    animation: gradient 5s infinite;
+    -webkit-animation: gradient 5s infinite;
 }
 
 #navMenu:hover, .nav:hover {
@@ -1651,8 +1651,8 @@ body.nav-active{
 
 .diamond {
   position: absolute;
-  width: 67.5px;
-  height: 67.5px;
+      width: 60px;
+    height: 60px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   background: #910EC9;
@@ -1690,33 +1690,33 @@ body.nav-active{
 }
 
 .nav1 {
-  top: 86px;
-  left: 287px;
+  top: 73%;
+  left: 3.2%;
 }
 
 .nav2 {
-  top: 136px;
+  top: 73%;
   left: 337px;
 }
 
 .nav3 {
-  top: 186px;
+  top: 73%;
   left: 387px;
 }
 
 .nav4 {
-  top: 236px;
+  top: 73%;
   left: 337px;
 }
 
 .nav5 {
-  top: 286px;
+  top: 73%;
   left: 287px;
 }
 
 .smallsecond {
-  top: 186px;
-  left: 236px;
+  top: 87%;
+  left: 3%;
   z-index: 10;
   background: #643fc1;
   transition: 0.5s;
@@ -1731,11 +1731,11 @@ body.nav-active{
 }
 
 #mainRotCorrect {
-  margin-left: 26px;
-  margin-top: 28px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  max-width: 90px;
+    margin-left: 15%;
+    margin-top: 15%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    max-width: 90px;
 }
 
 i {
