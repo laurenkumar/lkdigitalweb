@@ -177,7 +177,7 @@ body.nav-active{
   $menu--items--count: 4;
   .menu-icon{
     &__line{
-      background-color: #000;
+      background-color: #fff;
       transform: translateX(0px) rotate(-45deg);
     }
     &__line-left{
@@ -336,4 +336,9 @@ body.nav-active{
     color: #EEEEEE;
   }
 
+@media screen and (min-width: 500px) {
+  .nav2, .nav3, .nav4 {
+    margin-left: 3%;
+  }
+}
 
