@@ -1,102 +1,3 @@
-<!-- <% if !current_page? root_path  %>
-
-<% else %>
-<%= link_to work_path, id: 'work_project', class: 'top_left' do %>
-<div class="myText">
-
-</div>
-<%= image_tag 'pencil.png', alt: 'projects link lkdigital' %>
-<% end %>
-
-<%= link_to us_path, class: 'bottom_left' do %>
-<div class="myText">
-
-</div>
-<%= image_tag 'us.png', alt: 'contact and information link lkdigital' %>
-<% end %>
-
-<%= link_to educ_path, class: 'bottom_right' do %>
-<div class="myText">
-
-</div>
-<%= image_tag 'educ.png', alt: 'Education link lkdigital' %>
-<% end %>
-<% end %>
-
-<div id="btn" class="top_right">
-  <%= image_tag 'menu.png', alt: 'menu lkdigital' %>
-</div>
-<div id="box">
-  <div id="items">
-    <div class="itemm"><%= link_to "HOME", root_path %></div>
-
-    <div class="itemm"><%= link_to "ABOUT US", us_path %></div>
-    <div class="itemm"><%= link_to "PROJECTS", work_path%></div>
-    <div class="itemm"><%= link_to "EDUCATION", educ_path%></div>
-    
-    <div class=" inline-block center firstpad">
-      <div class="social">
-        <a href="https://www.linkedin.com/company/lk-digital/" target="_blank"><i class="fa fa-linkedin 3x"></i></a>
-      </div>
-
-    </div>
-    <div class=" inline-block center">
-      <div class="social">
-        <a href="https://www.instagram.com/lkdigital_eu/" target="_blank"><i class="fa fa-instagram 3x"></i></a>
-      </div>
-
-    </div>
-    <div class=" inline-block center">
-      <div class="social">
-        <a href="https://twitter.com/LKDigital_eu" target="_blank"><i class="fa fa-twitter 3x"></i></a>
-      </div>
-
-    </div>
-    <div class=" inline-block center">
-      <div class="social">
-        <a href="http://facebook.com/lkdigital.eu" class="" target="_blank"><i class="fa fa-facebook 3x"></i></a>
-      </div>
-    </div>
-    <div class="footer">© <strong id="footer"></strong> LK DIGITAL</div>
-  </div>
-</div>
-
-<script>
-  var sidebarBox = document.querySelector('#box');
-  var sidebarBtn = document.querySelector('#btn');
-  var pageWrapper = document.querySelector('#page-wrapper');
-
-  sidebarBtn.addEventListener('click', function (event) {
-    sidebarBtn.classList.toggle('active');
-    sidebarBox.classList.toggle('active');
-  });
-
-  /*pageWrapper.addEventListener('click', function (event) {
-
-    if (sidebarBox.classList.contains('active')) {
-      sidebarBtn.classList.remove('active');
-      sidebarBox.classList.remove('active');
-    }
-  });*/
-
-  window.addEventListener('keydown', function (event) {
-
-    if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
-      sidebarBtn.classList.remove('active');
-      sidebarBox.classList.remove('active');
-    }
-  });
-
-  function myFunction() {
-    var d = new Date();
-    var n = d.getFullYear();
-    document.getElementById("footer").innerHTML = n;
-  }
-  window.onload = myFunction;
-
-
-</script> -->
-
 <div class="menu-icon">
   <span class="menu-icon__line menu-icon__line-left"></span>
   <span class="menu-icon__line"></span>
@@ -115,7 +16,9 @@
 </div>
 
 <div id="navMenu" class="diamond">
-  <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-cubes " style="font-size: 1.5em;margin-left: 11%; margin-top: 6%;" aria-hidden="true"></i></div>
+  <div id="mainRotCorrect" class="rotCorrect">
+    <i class="fa fa-cubes " style="font-size: 1.5em;margin-left: 11%; margin-top: 6%;" aria-hidden="true"></i>
+  </div>
 </div>
 <div id="nav1" class="navsecond nav1 diamond">
   <div class="rotCorrect">
@@ -125,7 +28,6 @@
     </a>
   </div>
 </div>
-<!--<div class="popUp">Home</div>-->
 <div id="nav2" class="navsecond nav2 diamond">
   <div class="rotCorrect">
     <a href="/us">
