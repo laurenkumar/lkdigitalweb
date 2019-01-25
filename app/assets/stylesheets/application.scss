@@ -551,7 +551,7 @@ $slide-slow: all, 1s, cubic-bezier(0.62,0.28,0.23,0.99);
 
 $city-image: 1;
 $city-caption: 2;
-$navigation: 10;
+$navigation: 13;
 
 
 //MIXINS
@@ -628,7 +628,6 @@ $typekit-fallbacks:  $arial;
         $style: i;
     }
 
-    // Assemble $font-family
     $primary-font:   nth($typekit-fonts, $font) + "-" + $style + $weight;
     $secondary-font: nth($typekit-fonts, $font);
     $fallback-fonts: nth($typekit-fallbacks, $font);
@@ -651,36 +650,8 @@ $typekit-fallbacks:  $arial;
     @include css3-prefix('transform', $params);
 }
 
-//RESET
-html,body,input,button {
-    -webkit-text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
 
-body,h1,h2,h3,h4,h5,h6,ul,ol,p,hr,form { 
-    margin: 0px; 
-    padding: 0px; 
-    border: none;
-}
 
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-weight: normal;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-//HTML5 fix
-section,nav,article,aside,header,footer,main,figure,figcaption { display: block; }
-
-hr          { float: left; width: 100%; height: 1px; }
-ul,ol       { list-style: none; }
-
-//text selection
 ::selection { background: rgba(255,255,255,0); color: $gold; }
 ::-moz-selection { background: rgba(255,255,255,0); color: $gold; }
 
@@ -705,8 +676,6 @@ input:focus, textarea:focus, select:focus { outline: none; }
 *:before, *:after, * {
     @include border-box();
 }
-//GRID
-/*GRID*/
 $max-width:        1170px; // set page max-width
 $column-width:     5.9829%;    // set column width
 $gutter-width:     2.5641%;     // set gutter width
@@ -760,13 +729,6 @@ $maximum-columns:  12;       // set max number of columns
     @include nesting; // add nesting styles to rows
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: $max-width;
-    @include border-box;
-}
-
 .row { @include row(); }
 
 $i: 1;
@@ -798,14 +760,7 @@ $i: 1;
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  *
  * ========================================================== */
-html, body {
-    overflow:hidden;
-    margin:0;
-    padding:0;
 
-    /*Avoid flicker on slides transitions for mobile phones #336 */
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
 .pp-section {
     height:100%;
     position:absolute;
@@ -925,7 +880,7 @@ a {
 .city-navigation-wrapper {
     position: fixed;
     top: 50%;
-    left: 50px;
+    right: 50px;
     margin-top: -90px;
     z-index: $navigation;
     nav {
