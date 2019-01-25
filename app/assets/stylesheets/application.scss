@@ -392,6 +392,12 @@ body.nav-active{
     justify-content: space-around;
   }
 
+  footer.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
   .footer__socials, .footer__socials-list {
     display: -webkit-box;
     display: -ms-flexbox;
