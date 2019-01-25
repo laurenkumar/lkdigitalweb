@@ -81,6 +81,10 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
+li a {
+  color: #ADE900 !important;
+}
+
 .site-content{
   max-width: 1100px;
   height: 100vh;
@@ -102,7 +106,7 @@ body{
   height: $size;
   width: $size;
   position: fixed;
-  z-index:2;
+  z-index:13;
   left: 20px;
   top: 20px;
   cursor: pointer;
@@ -129,7 +133,7 @@ body{
   $font--size--calc: calc(2vw + 10px);
   $transition--easing: cubic-bezier(.77,0,.175,1);
   position: fixed;
-  z-index:1;
+  z-index:12;
   &:before,&:after{
     content: "";
     position: fixed;
@@ -214,9 +218,9 @@ body.nav-active{
   left: 3%;
   width: 45px;
   height: 45px;
-  z-index: 100;
-  background: linear-gradient(90deg, #910EC9, #d350db, #910EC9);
-  -webkit-background: linear-gradient(90deg, #910EC9, #d350db, #910EC9);
+  z-index: 11;
+  background: linear-gradient(90deg, #ADE900, #069400, #ADE900);
+  -webkit-background: linear-gradient(90deg, #ADE900, #069400, #ADE900);
   background-size: 400% 400%;
   -webkit-background-size: 88% 166%;
   animation: gradient 5s infinite;
@@ -244,7 +248,7 @@ body.nav-active{
   height: 45px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  background: #910EC9;
+  background: #ADE900;
   margin: 10px;
   cursor: pointer;
   box-shadow: 1px 4px 10px #101010;
@@ -285,12 +289,12 @@ body.nav-active{
 
   .nav2 {
     top: 73%;
-    left: 120px;
+    left: 65px;
   }
 
   .nav3 {
     top: 73%;
-    left: 180px;
+    left: 120px;
   }
 
   .nav4 {
@@ -300,11 +304,11 @@ body.nav-active{
 
   .nav5 {
     top: 73%;
-    left: 287px;
+    left: 175px;
   }
 
   .smallsecond {
-    top: 87%;
+    top: 82%;
     left: 3%;
     z-index: 10;
     background: #643fc1;
@@ -315,7 +319,7 @@ body.nav-active{
   .rotCorrect {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    margin-left: 12px;
+    margin-left: 10px;
     margin-top: 3px;
   }
 
