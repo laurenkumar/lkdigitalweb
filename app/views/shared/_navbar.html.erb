@@ -106,47 +106,126 @@
 <div class="nav">
   <div class="nav__content">
     <ul class="nav__list">
-      <li class="nav__list-item">Home</li>
-      <li class="nav__list-item">About</li>
-      <li class="nav__list-item">Projects</li>
-      <li class="nav__list-item">Contact</li>
+      <li class="nav__list-item mx-auto display-4"><%= link_to "HOME", root_path %></li>
+      <li class="nav__list-item mx-auto display-4"><%= link_to "ABOUT US", us_path %></li>
+      <li class="nav__list-item mx-auto display-4"><%= link_to "PROJECTS", work_path%></li>
+      <li class="nav__list-item mx-auto display-4"><%= link_to "EDUCATION", educ_path%></li>
     </ul>
   </div>
 </div>
 
-<div class="site-content">
-  <h1 class="site-content__headline">Another menu concept</h1>
+<div class="mobile-wrap">
+  <div class="mobile clearfix">
+    <div class="nav">
+      <a href="#profile" class="nav-item nav-count-1"><i class="ion-ios-person-outline"></i><span class="invisible">Profile</span></a>
+      <a href="#compose" class="nav-item nav-count-2"><i class="ion-ios-compose-outline"></i><span class="invisible">Compose</span></a>
+      <a href="#chats" class="nav-item nav-count-3"><i class="ion-ios-chatboxes-outline"></i><span class="invisible">Chats</span></a>
+      <a href="#alarm" class="nav-item nav-count-4"><i class="ion-ios-alarm-outline"></i><span class="invisible">Alarm</span></a>
+      <a href="#toggle" class="mask"><i class="ion-ios-plus-empty"></i></a>
+    </div>
+  </div>
 </div>
 
 <script >
-  console.clear();
 
-const app = (() => {
-  let body;
-  let menu;
-  let menuItems;
-  
-  const init = () => {
-    body = document.querySelector('body');
-    menu = document.querySelector('.menu-icon');
-    menuItems = document.querySelectorAll('.nav__list-item');
+  const app = (() => {
+    let body;
+    let menu;
+    let menuItems;
+    
+    const init = () => {
+      body = document.querySelector('body');
+      menu = document.querySelector('.menu-icon');
+      menuItems = document.querySelectorAll('.nav__list-item');
 
-    applyListeners();
-  }
-  
-  const applyListeners = () => {
-    menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
-  }
-  
-  const toggleClass = (element, stringClass) => {
-    if(element.classList.contains(stringClass))
-      element.classList.remove(stringClass);
-    else
-      element.classList.add(stringClass);
-  }
-  
-  init();
-})();
+      applyListeners();
+    }
+    
+    const applyListeners = () => {
+      menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
+    }
+    
+    const toggleClass = (element, stringClass) => {
+      if(element.classList.contains(stringClass))
+        element.classList.remove(stringClass);
+      else
+        element.classList.add(stringClass);
+    }
+    
+    init();
+  })();
 
+
+  $(function() {
+    App.init();
+  });
+  var App = {
+    init: function() {
+      this.datetime(), this.side.nav(), this.search.bar(), this.navigation(), this.hyperlinks(), setInterval("App.datetime();", 1e3)
+    },
+    datetime: function() {
+      var e = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"),
+      t = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"),
+      a = new Date,
+      i = a.getYear();
+      1e3 > i && (i += 1900);
+      var s = a.getDay(),
+      n = a.getMonth(),
+      r = a.getDate();
+      10 > r && (r = "0" + r);
+      var l = a.getHours(),
+      c = a.getMinutes(),
+      h = a.getSeconds(),
+      o = "AM";
+      l >= 12 && (o = "PM"), l > 12 && (l -= 12), 0 == l && (l = 12), 9 >= c && (c = "0" + c), 9 >= h && (h = "0" + h), $(".welcome .datetime .day").text(e[s]), $(".welcome .datetime .date").text(t[n] + " " + r + ", " + i), $(".welcome .datetime .time").text(l + ":" + c + ":" + h + " " + o)
+    },
+    title: function(e) {
+      return $(".header>.title").text(e)
+    },
+    side: {
+      nav: function() {
+        this.toggle(), this.navigation()
+      },
+      toggle: function() {
+        $(".ion-ios-navicon").on("touchstart click", function(e) {
+          e.preventDefault(), $(".sidebar").toggleClass("active"), $(".nav").removeClass("active"), $(".sidebar .sidebar-overlay").removeClass("fadeOut animated").addClass("fadeIn animated")
+        }), $(".sidebar .sidebar-overlay").on("touchstart click", function(e) {
+          e.preventDefault(), $(".ion-ios-navicon").click(), $(this).removeClass("fadeIn").addClass("fadeOut")
+        })
+      },
+      navigation: function() {
+        $(".nav-left a").on("touchstart click", function(e) {
+          e.preventDefault();
+          var t = $(this).attr("href").replace("#", "");
+          $(".sidebar").toggleClass("active"), $(".html").removeClass("visible"), "home" == t || "" == t || null == t ? $(".html.welcome").addClass("visible") : $(".html." + t).addClass("visible"), App.title($(this).text())
+        })
+      }
+    },
+    search: {
+      bar: function() {
+        $(".header .ion-ios-search").on("touchstart click", function() {
+          var e = ($(".header .search input").hasClass("search-visible"), $(".header .search input").val());
+          return "" != e && null != e ? (App.search.html($(".header .search input").val()), !1) : ($(".nav").removeClass("active"), $(".header .search input").focus(), void $(".header .search input").toggleClass("search-visible"))
+        }), $(".search form").on("submit", function(e) {
+          e.preventDefault(), App.search.html($(".header .search input").val())
+        })
+      },
+      html: function(e) {
+        $(".search input").removeClass("search-visible"), $(".html").removeClass("visible"), $(".html.search").addClass("visible"), App.title("Result"), $(".html.search").html($(".html.search").html()), $(".html.search .key").html(e), $(".header .search input").val("")
+      }
+    },
+    navigation: function() {
+      $(".nav .mask").on("touchstart click", function(e) {
+        e.preventDefault(), $(this).parent().toggleClass("active")
+      })
+    },
+    hyperlinks: function() {
+      $(".nav .nav-item").on("click", function(e) {
+        e.preventDefault();
+        var t = $(this).attr("href").replace("#", "");
+        $(".html").removeClass("visible"), $(".html." + t).addClass("visible"), $(".nav").toggleClass("active"), App.title($(this).text())
+      })
+    }
+  };
 
 </script>
