@@ -103,8 +103,8 @@ body{
   width: $size;
   position: fixed;
   z-index:2;
-  left: 50px;
-  top: 30px;
+  left: 20px;
+  top: 20px;
   cursor: pointer;
   &__line{
     height: 2px;
@@ -210,10 +210,10 @@ body.nav-active{
 
 
 #navMenu {
-  top: 87%;
+  top: 82%;
   left: 3%;
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   z-index: 100;
   background: linear-gradient(90deg, #910EC9, #d350db, #910EC9);
   -webkit-background: linear-gradient(90deg, #910EC9, #d350db, #910EC9);
@@ -240,8 +240,8 @@ body.nav-active{
 
 .diamond {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   background: #910EC9;
@@ -315,13 +315,13 @@ body.nav-active{
   .rotCorrect {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    margin-left: 14px;
-    margin-top: 8px;
+    margin-left: 12px;
+    margin-top: 3px;
   }
 
   #mainRotCorrect {
-    margin-left: 15%;
-    margin-top: 15%;
+    margin-left: 10%;
+    margin-top: 10%;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     max-width: 90px;
