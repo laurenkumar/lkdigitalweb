@@ -889,6 +889,7 @@ a {
 
     ul {
         li {
+            list-style: none;
             a {
                 font-family: $georgia;
                 color: $black-50;
@@ -905,7 +906,7 @@ a {
                     top: 27px;
                     width: 0;
                     height: 1px;
-                    background-color: $black-100;
+                    background-color: white;
                     position: absolute;
                     @include transition($hover-slow);
                 }
@@ -926,12 +927,11 @@ a {
 
 /*CITY WRAPPER*/
 .city-wrapper {
-    background: $white-100;
     &:before {
         content: "";
         height: 12px;
         width: 1px;
-        background-color: $black-100;
+        background-color: white;
         position: absolute;
         top: 1px;
         left: 50%;
@@ -943,7 +943,7 @@ a {
         content: "";
         height: 12px;
         width: 1px;
-        background-color: $black-100;
+        background-color: white;
         position: absolute;
         bottom: 1px;
         left: 50%;
