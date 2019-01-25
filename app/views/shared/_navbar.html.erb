@@ -114,16 +114,24 @@
   </div>
 </div>
 
-<div class="mobile-wrap">
-  <div class="mobile clearfix">
-    <div class="nav">
-      <a href="#profile" class="nav-item nav-count-1"><i class="ion-ios-person-outline"></i><span class="invisible">Profile</span></a>
-      <a href="#compose" class="nav-item nav-count-2"><i class="ion-ios-compose-outline"></i><span class="invisible">Compose</span></a>
-      <a href="#chats" class="nav-item nav-count-3"><i class="ion-ios-chatboxes-outline"></i><span class="invisible">Chats</span></a>
-      <a href="#alarm" class="nav-item nav-count-4"><i class="ion-ios-alarm-outline"></i><span class="invisible">Alarm</span></a>
-      <a href="#toggle" class="mask"><i class="ion-ios-plus-empty"></i></a>
-    </div>
-  </div>
+<div id="navMenu" class="diamond">
+  <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-cubes fa-4x" aria-hidden="true"></i></div>
+</div>
+<div id="nav1" class="nav nav1 diamond">
+  <div class="rotCorrect"><i class="fa fa-home fa-2x" aria-hidden="true"></i></div>
+</div>
+<!--<div class="popUp">Home</div>-->
+<div id="nav2" class="nav nav2 diamond">
+  <div class="rotCorrect"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></div>
+</div>
+<div id="nav3" class="nav nav3 diamond">
+  <div class="rotCorrect"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></div>
+</div>
+<div id="nav4" class="nav nav4 diamond">
+  <div class="rotCorrect"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i></div>
+</div>
+<div id="nav5" class="nav nav5 diamond">
+  <div class="rotCorrect"><i class="fa fa-cogs fa-2x" aria-hidden="true"></i></div>
 </div>
 
 <script >
@@ -155,45 +163,15 @@
     init();
   })();
 
-
-  $(function() {
-    App.init();
-  });
-  var App = {
-    init: function() {
-      this.side.nav(), this.navigation(), this.hyperlinks();
-    },
-    side: {
-      nav: function() {
-        this.toggle(), this.navigation()
-      },
-      toggle: function() {
-        $(".ion-ios-navicon").on("touchstart click", function(e) {
-          e.preventDefault(), $(".sidebar").toggleClass("active"), $(".nav").removeClass("active"), $(".sidebar .sidebar-overlay").removeClass("fadeOut animated").addClass("fadeIn animated")
-        }), $(".sidebar .sidebar-overlay").on("touchstart click", function(e) {
-          e.preventDefault(), $(".ion-ios-navicon").click(), $(this).removeClass("fadeIn").addClass("fadeOut")
-        })
-      },
-      navigation: function() {
-        $(".nav-left a").on("touchstart click", function(e) {
-          e.preventDefault();
-          var t = $(this).attr("href").replace("#", "");
-          $(".sidebar").toggleClass("active"), $(".html").removeClass("visible"), "home" == t || "" == t || null == t ? $(".html.welcome").addClass("visible") : $(".html." + t).addClass("visible"), App.title($(this).text())
-        })
-      }
-    },
-    navigation: function() {
-      $(".nav .mask").on("touchstart click", function(e) {
-        e.preventDefault(), $(this).parent().toggleClass("active")
-      })
-    },
-    hyperlinks: function() {
-      $(".nav .nav-item").on("click", function(e) {
-        e.preventDefault();
-        var t = $(this).attr("href").replace("#", "");
-        $(".html").removeClass("visible"), $(".html." + t).addClass("visible"), $(".nav").toggleClass("active"), App.title($(this).text())
-      })
+$(document).ready(function() {
+  $("#navMenu").click(function() {
+   //$(".nav").toggleClass("small");
+    if ($(".nav").hasClass("small")) {
+      $(".nav").removeClass("small");
+    } else {
+      $(".nav").addClass("small");
     }
-  };
+  });
+});
 
 </script>
