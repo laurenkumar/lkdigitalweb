@@ -163,7 +163,7 @@ li a {
   }
   &__list-item{
     position: relative;
-    display: inline-block;
+    display: block;
     transition-delay: $transition--length + s;
     opacity: 0;
     transform: translate(0%, 100%);
@@ -299,7 +299,7 @@ body.nav-active{
 
   .nav4 {
     top: 73%;
-    left: 240px;
+    left: 175px;
   }
 
   .nav5 {
