@@ -425,43 +425,28 @@ body.nav-active{
     width: 20%;
     font-size: 1.2em;
     color: #AED900;
-    left: 102%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
 
   @media (max-width: 320px) {
-    .header__right {
-      width: 40%;
-      left: 87%;
-    }
+    
   }
 
   @media (max-width: 375px) {
-    .header__right {
-      width: 40%;
-      left: 92%;
-    }
+    
   }
 
   @media (max-width: 425px) {
-    .header__right {
-      width: 40%;
-      left: 96%;
-    }
+   
   }
 
   @media (max-width: 768px) {
-    .header__right {
-      width: 40%;
-      left: 107%;
-    }
+    
   }
 
   @media (max-width: 991px) {
-    .header__right {
-      left: 110%;
-    }
+    
 
     .footer__socials-copyright {
       display: -webkit-box;
