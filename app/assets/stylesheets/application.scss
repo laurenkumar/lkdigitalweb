@@ -429,6 +429,11 @@ body.nav-active{
     transform: translate(-50%, -50%);
   }
 
+  a:hover {
+    color: #AED900;
+    text-decoration: none;
+  }
+
   @media (max-width: 320px) {
     
   }
