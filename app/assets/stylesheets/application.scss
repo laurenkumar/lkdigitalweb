@@ -1108,10 +1108,18 @@ a {
     }
 }
 
+.section.city-wrapper {
+  visibility: hidden;
+}
+
+.section.city-wrapper.active {
+  visibility: visible;
+}
+
 
 .background {
   display: flex;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .newyork-wrapper .container {
@@ -1319,6 +1327,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .contact-section-subtitle {
+    display: none;
+  }
   .screen-body {
     padding: 40px;
   }
