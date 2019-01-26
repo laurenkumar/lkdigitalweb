@@ -846,8 +846,14 @@ $i: 1;
 .pp-section {
     height:100%;
     position:absolute;
-    width:70%;
+    width:100%;
 }
+
+.city-wrapper.pp-section {
+    height:100%;
+    position:absolute;
+    width:70%;
+} 
 .pp-easing {
     @include transition(all, 1.25s, cubic-bezier(0.62,0.28,0.23,0.99));
     /* custom */
