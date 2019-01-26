@@ -177,7 +177,7 @@ body.nav-active .city-navigation-wrapper {
 }
 
 .nav__content {
-  display: none;
+  visibility: hidden;
 }
 
 
@@ -252,7 +252,7 @@ body.nav-active .city-navigation-wrapper {
 // active state
 body.nav-active{
   .nav__content {
-    display: block;
+    visibility: visible;
   }
   $menu--items--count: 4;
   .menu-icon{
@@ -981,12 +981,15 @@ a {
                 width: 55px;
                 height: 45px;
                 text-align: center;
+                span {
+                  display: none;
+                }
                 &:before {
                     content: "";
                     right: 100%;
-                    opacity: 0;
+                    opacity: 1;
                     top: 27px;
-                    width: 0;
+                    width: 15px;
                     height: 1px;
                     background-color: white;
                     position: absolute;
@@ -997,6 +1000,9 @@ a {
             &.active {
                 a {
                     color: $black-100;
+                    span {
+                      display: block;
+                    }
                     &:before {
                         opacity: 1;
                         width: 15px;
