@@ -176,8 +176,13 @@ body.nav-active .city-navigation-wrapper {
   }
 }
 
+.nav__content {
+  display: none;
+}
+
 // active state
 body.nav-active{
+  display: block;
   $menu--items--count: 4;
   .menu-icon{
     &__line{
@@ -886,7 +891,7 @@ a {
 .city-navigation-wrapper {
     position: fixed;
     top: 50%;
-    right: 0px;
+    right: 5px;
     margin-top: -90px;
     z-index: $navigation;
     nav {
@@ -923,7 +928,7 @@ a {
                     color: $black-100;
                     &:before {
                         opacity: 1;
-                        width: 45px;
+                        width: 15px;
                     }
                 }
             }
