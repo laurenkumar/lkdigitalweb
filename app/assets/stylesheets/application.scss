@@ -557,7 +557,7 @@ $slide-slow: all, 1s, cubic-bezier(0.62,0.28,0.23,0.99);
 
 $city-image: 1;
 $city-caption: 2;
-$navigation: 13;
+$navigation: 14;
 
 
 //MIXINS
@@ -886,7 +886,7 @@ a {
 .city-navigation-wrapper {
     position: fixed;
     top: 50%;
-    right: 50px;
+    right: 0px;
     margin-top: -90px;
     z-index: $navigation;
     nav {
