@@ -182,7 +182,9 @@ body.nav-active .city-navigation-wrapper {
 
 // active state
 body.nav-active{
-  display: block;
+  .nav__content {
+    display: block;
+  }
   $menu--items--count: 4;
   .menu-icon{
     &__line{
