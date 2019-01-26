@@ -283,6 +283,7 @@ body.nav-active{
   }*/
 
   .navsecond {
+        z-index: 10;
     transition: 0.5s;
     -webkit-transition: 0.5s;
   }
@@ -400,6 +401,7 @@ body.nav-active{
     position: absolute;
     bottom: 0;
     width: 100%;
+    z-index: 11;
   }
 
   .footer-copyright a {
