@@ -1343,6 +1343,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  -moz-box-shadow: -10px -4px 0px 0px #ADE900;
+-webkit-box-shadow: -10px -4px 0px 0px #ADE900;
+-o-box-shadow: -10px -4px 0px 0px #ADE900;
+box-shadow: -10px -4px 0px 0px #ADE900;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#ADE900, Direction=338, Strength=0);
 }
 
 /* ====================================
@@ -1408,6 +1413,7 @@ Home Slider
   filter: sepia(100%);
   transition: all 1s linear;
   transition-delay: 1s;
+  background-color: white;
 }
 .swiper-slide.swiper-slide-active .swiper-image-left {
   filter: sepia(0%);
