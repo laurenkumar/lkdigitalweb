@@ -1440,8 +1440,6 @@ h1 + p {
   margin-bottom: auto;
   align-self: flex-end;
   text-transform: uppercase;
-  transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.3s;
-  transform: translate3d(-20%, 0, 0);
   opacity: 0;
   font-weight: 500;
   color: #fff;
@@ -2250,7 +2248,11 @@ button.swiper-pagination-bullet {
 }
 
 .header img {
-  max-height: 100%;
+      max-width: 100%;
+    height: auto;
+    border: 0;
+    vertical-align: middle;
+    max-height: 100%;
 }
 
 .nav-menu ul {
