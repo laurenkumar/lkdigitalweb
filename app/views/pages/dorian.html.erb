@@ -65,11 +65,7 @@
 							var id        = $(this).attr('id');
 							var icon      = $(this).find('.page-title  i').attr('class');
 							var title     = $(this).find('.page-title input').val();
-							var menu_item = '<li>
-							<a href="#/' + id + '">
-							<i class="' + icon + '">
-							</i>' + title + '</a>
-							</li>';
+							var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"></i>' + title + '</a></li>';
 
 							menu_html += menu_item;
 							$('.menu-auto').html(menu_html);
