@@ -2556,30 +2556,6 @@ html.is-menu-toggled-on {
   text-align: center;
 }
 
-.section-title h2:after, .section-title h2:before {
-  background-color: #75ad6f;
-}
-
-.section-title h2:after, .section-title h2:before {
-  background-color: #7DB376;
-}
-.section-title h2:before {
-  bottom: auto;
-  top: -.5em;
-  left: -1.57em;
-  z-index: -1;
-}
-.section-title h2:after, .section-title h2:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: -.5em;
-  width: 2em;
-  height: 100%;
-  background-color: #7DB376;
-  pointer-events: none;
-}
-
 .service {
   padding: 0.2em 0;
 }
