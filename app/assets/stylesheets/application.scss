@@ -2490,6 +2490,26 @@ html.is-menu-toggled-on {
   padding-top: 0;
 }
 
+.section-title h2 i:before {
+    bottom: auto;
+    top: -.5em;
+    border-bottom: 0.5em solid #080b0c;
+    border-bottom: 0.5em solid rgba(8, 11, 12, 0.2);
+    border-left: .5em solid transparent;
+}
+
+.section-title h2 i:after, h2 i:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -.5em;
+    left: -.05em;
+    pointer-events: none;
+    -webkit-mask: none;
+}
+
 .modern-layout .page-current {
   visibility: visible;
   z-index: 1;
