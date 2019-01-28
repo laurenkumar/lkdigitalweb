@@ -12,185 +12,189 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
-<body >
-  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js">
-  </script>
-  <div id="particles-js"></div>
+<% if current_page?('/') %>
+  <body >
+<% else %>
+  <body class="bg-diff" >
+<% end %>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js">
+    </script>
+    <div id="particles-js"></div>
 
-  <%= render 'shared/navbar' %>
+    <%= render 'shared/navbar' %>
 
-  <%= yield %>
-  <% if current_page?('/') %>
-  <div class="mouse">
-    <div class="scroll"></div>
-  </div>
-  <% end %>
-
-  <!-- Footer -->
-  <footer class="page-footer font-small">
-
-    <!-- Footer Elements -->
-    <div class="">
-
-      <!-- Grid row-->
-      <div class="row mw-100">
-
-        <!-- Grid column -->
-        <div class="col-md-12">
-          <div class="flex-center float-right">
-
-            <!-- Facebook -->
-            <a class="fb-ic" href="https://www.facebook.com/lkdigital.eu/">
-              <i class="fab fa-facebook-f fa-lg white-text mr-md-3 mr-2 "> </i>
-            </a>
-            <!-- Twitter -->
-            <a class="tw-ic" href="https://twitter.com/LKDigital_eu?lang=fr">
-              <i class="fab fa-twitter fa-lg white-text mr-md-3 mr-2 "> </i>
-            </a>
-            <!--Instagram-->
-            <a class="ins-ic" href="https://www.instagram.com/lkdigital_eu/">
-              <i class="fab fa-instagram fa-lg white-text mr-md-3 mr-2 "> </i>
-            </a>
-          </div>
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row-->
-
-    </div>
-    <!-- Footer Elements -->
+    <%= yield %>
     <% if current_page?('/') %>
-    <!-- Copyright -->
-    <div class="footer-copyright text-center">© 2019
-      <a href="mailto:lauren_d@outlook.fr"> lauren_d@outlook.fr</a>
+    <div class="mouse">
+      <div class="scroll"></div>
     </div>
     <% end %>
-    <!-- Copyright -->
 
-  </footer>
-  <!-- Footer -->
-  <script>
-    $(document).ready(function() {
+    <!-- Footer -->
+    <footer class="page-footer font-small">
 
-      console.log("Loading particles.js");
+      <!-- Footer Elements -->
+      <div class="">
 
-      particlesJS('particles-js',
-      {
-        "particles": {
-          "number": {
-            "value": 50,
-            "density": {
-              "enable": true,
-              "value_area": 500
-            }
-          },
-          "color": {
-            "value": "#ADE900"
-          },
-          "shape": {
-            "type": "circle",
-            "stroke": {
-              "width": 0,
-              "color": "#000000"
-            },
-            "polygon": {
-              "nb_sides": 5
-            },
-            "image": {
-              "src": "img/github.svg",
-              "width": 20,
-              "height": 20
-            }
-          },
-          "opacity": {
-            "value": 0.5,
-            "random": false,
-            "anim": {
-              "enable": false,
-              "speed": 1,
-              "opacity_min": 0.1,
-              "sync": false
-            }
-          },
-          "size": {
-            "value": 1,
-            "random": true,
-            "anim": {
-              "enable": true,
-              "speed": 10,
-              "size_min": 0.1,
-              "sync": false
-            }
-          },
-          "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#069400",
-            "opacity": 0.4,
-            "width": 1
-          },
-          "move": {
-            "enable": true,
-            "speed": 12,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-              "enable": false,
-              "rotateX": 600,
-              "rotateY": 1200
-            }
-          }
-        },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "repulse"
-            },
-            "onclick": {
-              "enable": true,
-              "mode": "push"
-            },
-            "resize": true
-          },
-          "modes": {
-            "grab": {
-              "distance": 400,
-              "line_linked": {
-                "opacity": 1
+        <!-- Grid row-->
+        <div class="row mw-100">
+
+          <!-- Grid column -->
+          <div class="col-md-12">
+            <div class="flex-center float-right">
+
+              <!-- Facebook -->
+              <a class="fb-ic" href="https://www.facebook.com/lkdigital.eu/">
+                <i class="fab fa-facebook-f fa-lg white-text mr-md-3 mr-2 "> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic" href="https://twitter.com/LKDigital_eu?lang=fr">
+                <i class="fab fa-twitter fa-lg white-text mr-md-3 mr-2 "> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic" href="https://www.instagram.com/lkdigital_eu/">
+                <i class="fab fa-instagram fa-lg white-text mr-md-3 mr-2 "> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+      <!-- Footer Elements -->
+      <% if current_page?('/') %>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center">© 2019
+        <a href="mailto:lauren_d@outlook.fr"> lauren_d@outlook.fr</a>
+      </div>
+      <% end %>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script>
+      $(document).ready(function() {
+
+        console.log("Loading particles.js");
+
+        particlesJS('particles-js',
+        {
+          "particles": {
+            "number": {
+              "value": 50,
+              "density": {
+                "enable": true,
+                "value_area": 500
               }
             },
-            "bubble": {
-              "distance": 400,
-              "size": 10,
-              "duration": 2,
-              "opacity": 0.8,
-              "speed": 3
+            "color": {
+              "value": "#ADE900"
             },
-            "repulse": {
-              "distance": 200,
-              "duration": 0.4
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              },
+              "image": {
+                "src": "img/github.svg",
+                "width": 20,
+                "height": 20
+              }
             },
-            "push": {
-              "particles_nb": 4
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
             },
-            "remove": {
-              "particles_nb": 2
+            "size": {
+              "value": 1,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 10,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#069400",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 12,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
             }
-          }
-        },
-        "retina_detect": true
-      }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 10,
+                "duration": 2,
+                "opacity": 0.8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        }
 
-      );
+        );
 
-    });
+      });
 
-  </script>
-</body>
-</html>
+    </script>
+  </body>
+  </html>
