@@ -2,12 +2,12 @@
 	<header id="masthead" class="header" role="banner">
 
 		<a class="menu-toggle toggle-link mx-auto">
-			<span class="menu-icon__line mx-auto " style="    margin-top: 15px;
-			width: 30px !important;"></span>
-			<span class="menu-icon__line mx-auto" style="
-			width: 30px !important;"></span>
-			<span class="menu-icon__line mx-auto" style="
-			width: 30px !important;"></span>
+			<span class="menu-icon__line mx-auto " style="margin-top: 15px; width: 30px !important;">
+			</span>
+			<span class="menu-icon__line mx-auto" style="width: 30px !important;">
+			</span>
+			<span class="menu-icon__line mx-auto" style="width: 30px !important;">
+			</span>
 		</a>
 
 		<h1 class="site-title mobile-title">
@@ -26,26 +26,30 @@
 					<ul class="menu-auto">
 						<li class="">
 							<a href="#/home">
-								<i class="fas fa-home fa-2x	"></i>
+								<i class="fas fa-home fa-2x	">
+								</i>
 								home
 							</a>
 						</li>
 						<li class="">
 							<a href="#/about-me">
-								<i class="far fa-user-circle fa-2x	"></i>
+								<i class="far fa-user-circle fa-2x	">
+								</i>
 								about me
 							</a>
 						</li>
 						<li class="">
 							<a href="#/resume">
-								<i class="far fa-address-card fa-2x	"></i>
+								<i class="far fa-address-card fa-2x	">
+								</i>
 								resume
 							</a>
 						</li>
 
 						<li class="">
 							<a href="#/contact">
-								<i class="fas fa-map-marker-alt fa-2x"></i>
+								<i class="fas fa-map-marker-alt fa-2x">
+								</i>
 								contact
 							</a>
 						</li>
@@ -76,17 +80,20 @@
 					<ul class="social">
 						<li>
 							<a target="_blank" class="facebook" href="#">
-								<i class="fab fa-facebook-f"></i>
+								<i class="fab fa-facebook-f">
+								</i>
 							</a>
 						</li>
 						<li>
 							<a target="_blank" class="linkedin" href="#">
-								<i class="fab fa-linkedin"></i>
+								<i class="fab fa-linkedin">
+								</i>
 							</a>
 						</li>
 						<li>
 							<a target="_blank" class="instagram" href="#">
-								<i class="fab fa-instagram"></i>
+								<i class="fab fa-instagram">
+								</i>
 							</a>
 						</li>
 					</ul>
@@ -104,12 +111,232 @@
 	</header>
 
 	<div id="main" class="site-main">
-		<div>
+		<div id="home" class="pt-page page-layout home-section page-current">
 			<%= link_to root_path, class: 'centered' do %>
 			<%= image_tag 'LogoLKDigital.png', alt: 'logo lkdigital', id: 'height_logo' %>
 			<% end %>
 			<div class="layout-medium centeredtext text-center">
 				<h2 style="font-weight: bold;">Dorian Laurenceau</h2>
+			</div>
+		</div>
+
+		<div id="about-me" class="pt-page page-layout ">
+			<div class="content">
+				<div class="layout-medium">
+					<h1 class="page-title">
+						<i class="pe-7s-user">
+						</i>
+						about me														<input type="hidden" name="menu-item-title" value="about me">
+					</h1> <!-- .page-title -->
+					<div class="section-title center">
+						<h2>
+							<i>Services</i>
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+							<div class="service">
+								<p>
+									<img class="alignnone size-full wp-image-228" src="http://themes.pixelwars.org/empathy/wp-content/uploads/2014/04/icon-01.png" alt="icon-01" width="512" height="512" srcset="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-01.png 512w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-01-150x150.png 150w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-01-300x300.png 300w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-01-500x500.png 500w" sizes="(max-width: 512px) 100vw, 512px">
+								</p>
+								<h4>COPYWRITER</h4>
+								<p>I design super cool websites. It is a long established fact that a reader will be distracted by the readable content.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="service">
+								<p>
+									<img class="alignnone size-full wp-image-229" src="http://themes.pixelwars.org/empathy/wp-content/uploads/2014/04/icon-02.png" alt="icon-02" width="512" height="512" srcset="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-02.png 512w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-02-150x150.png 150w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-02-300x300.png 300w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-02-500x500.png 500w" sizes="(max-width: 512px) 100vw, 512px">
+								</p>
+								<h4>GAME DEV</h4>
+								<p>I can design beautiful type faces for both digital and print media. It is a long established fact that a reader will be distracted.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="service">
+								<p>
+									<img class="alignnone size-full wp-image-230" src="http://themes.pixelwars.org/empathy/wp-content/uploads/2014/04/icon-03.png" alt="icon-03" width="512" height="512" srcset="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-03.png 512w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-03-150x150.png 150w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-03-300x300.png 300w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-03-500x500.png 500w" sizes="(max-width: 512px) 100vw, 512px">
+								</p>
+								<h4>MANAGEMENT</h4>
+								<p>I write about web design. It is a long established fact that a reader will be distracted by the readable content.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="service">
+								<p>
+									<img class="alignnone size-full wp-image-231" src="http://themes.pixelwars.org/empathy/wp-content/uploads/2014/04/icon-04.png" alt="icon-04" width="512" height="512" srcset="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-04.png 512w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-04-150x150.png 150w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-04-300x300.png 300w, http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/icon-04-500x500.png 500w" sizes="(max-width: 512px) 100vw, 512px">
+								</p>
+								<h4>PROBLEM SOLVER</h4>
+								<p>I have strong project management skills. It is a long established fact that a reader will be distracted by the readable content.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="section-title center">
+						<h2>
+							<i>Work Process</i>
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-2 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="pe-7s-chat">
+									</i>
+								</p>
+								<h4>DISCOVER</h4>
+							</div>
+						</div>
+						<div class="col-sm-2 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="pe-7s-light">
+									</i>
+								</p>
+								<h4>IDEA</h4>
+							</div>
+						</div>
+						<div class="col-sm-2 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="pe-7s-vector">
+									</i>
+								</p>
+								<h4>DESIGN</h4>
+							</div>
+						</div>
+						<div class="col-sm-2 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="pe-7s-network">
+									</i>
+								</p>
+								<h4>DEVELOP</h4>
+							</div>
+						</div>
+						<div class="col-sm-2 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="pe-7s-browser">
+									</i>
+								</p>
+								<h4>TEST</h4>
+							</div>
+						</div>
+						<div class="col-sm-2 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="pe-7s-rocket">
+									</i>
+								</p>
+								<h4>LAUNCH</h4>
+							</div>
+						</div>
+					</div>
+					<div class="section-title center">
+						<h2>
+							<i>Clients</i>
+						</h2>
+					</div>
+					<div class="row">
+						<div class=" col-xs-4 col-md-2">
+							<div class="client">
+								<a href="#">
+									<img class="alignnone size-full wp-image-234" src="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/client-01.png" alt="client-01" width="200" height="142">
+								</a>
+							</div>
+						</div>
+						<div class=" col-xs-4 col-md-2">
+							<div class="client">
+								<a href="#">
+									<img class="alignnone size-full wp-image-235" src="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/client-02.png" alt="client-02" width="250" height="235">
+								</a>
+							</div>
+						</div>
+						<div class=" col-xs-4 col-md-2">
+							<div class="client">
+								<a href="#">
+									<img class="alignnone size-full wp-image-236" src="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/client-03.png" alt="client-03" width="250" height="172">
+								</a>
+							</div>
+						</div>
+						<div class=" col-xs-4 col-md-2">
+							<div class="client">
+								<a href="#">
+									<img class="alignnone size-full wp-image-237" src="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/client-04.png" alt="client-04" width="173" height="91">
+								</a>
+							</div>
+						</div>
+						<div class=" col-xs-4 col-md-2">
+							<div class="client">
+								<a href="#">
+									<img class="alignnone size-full wp-image-238" src="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/client-05.png" alt="client-05" width="250" height="161">
+								</a>
+							</div>
+						</div>
+						<div class=" col-xs-4 col-md-2">
+							<div class="client">
+								<a href="#">
+									<img class="alignnone size-full wp-image-239" src="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2014/04/client-06.png" alt="client-06" width="250" height="223">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="section-title center">
+						<h2>
+							<i>Fun Fact</i>
+						</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-3 col-xs-6">
+							<div class="fun-fact">
+								<p>
+									<i class="pe-7s-map-2">
+									</i>
+								</p>
+								<h4>24 Countries Visited</h4>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<div class="fun-fact">
+								<p>
+									<i class="pe-7s-news-paper">
+									</i>
+								</p>
+								<h4>72 Articles Published</h4>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<div class="fun-fact">
+								<p>
+									<i class="pe-7s-coffee">
+									</i>
+								</p>
+								<h4>20.000 Cups Of Coffee</h4>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<div class="fun-fact">
+								<p>
+									<i class="pe-7s-medal">
+									</i>
+								</p>
+								<h4>12 Awards Won</h4>
+							</div>
+						</div>
+					</div>
+					<div class="section-title center">
+						<h2>
+							<i>Other Pages</i>
+						</h2>
+					</div>
+					<p class="center">
+						<a class="button " href="http://themes.pixelwars.org/empathy/404/">404</a> <a class="button " href="http://themes.pixelwars.org/empathy/blog/">Blog</a> <a class="button " href="http://themes.pixelwars.org/empathy/form-elements/">Form Elements</a> <a class="button " href="http://themes.pixelwars.org/empathy/grid/">Grid</a> <a class="button " href="http://themes.pixelwars.org/empathy/shortcodes/">Shortcodes</a> <a class="button " href="http://themes.pixelwars.org/empathy/typography/">Typography</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -176,7 +403,7 @@
 				$('.nav-menu a[href$=' + activePageId +']').parent().addClass('current_page_item').siblings().removeClass('current_page_item');
 			}	
 
-			
+
 
 
 
