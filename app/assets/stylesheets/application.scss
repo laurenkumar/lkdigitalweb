@@ -2426,6 +2426,13 @@ html.is-menu-toggled-on {
 .bg-diff {
   background-color: white;
 }
+.centeredtext {
+  position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 30%);
+    transform: translate(-50%, 30%);
+}
 
 .bg-diff .page-footer a i {
   color: #444;
