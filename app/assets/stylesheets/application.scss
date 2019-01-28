@@ -2191,6 +2191,17 @@ button.swiper-pagination-bullet {
     font-size: 18px;
 }
 
+.csstransforms.is-menu-toggled-on body {
+    left: 0;
+    -ms-transform: translate(120px,0px);
+    -webkit-transform: translate(120px,0px);
+    transform: translate(120px,0px);
+}
+.is-menu-toggled-on body {
+    left: 120px;
+    overflow: hidden;
+}
+
 .toggle-link {
   display: block;
   width: 50px;
