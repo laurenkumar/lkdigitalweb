@@ -2428,10 +2428,10 @@ html.is-menu-toggled-on {
 }
 .centeredtext {
   position: absolute;
-    top: 70%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 30%);
-    transform: translate(-50%, 30%);
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 30%);
+  transform: translate(-50%, 30%);
 }
 
 .bg-diff .page-footer a i {
@@ -2456,6 +2456,36 @@ html.is-menu-toggled-on {
   min-height: 100%;
 }
 
+.page-layout .content {
+  position: relative;
+  z-index: 10;
+  text-align: left;
+}
+
+.content > div {
+  padding: 2em 0 3em;
+}
+
+#about-me .layout-medium {
+  max-width: 1040px;
+}
+#about-me .layout-fixed, #about-me .layout-medium, #about-me .layout-full {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modern-layout .pt-page .layout-medium > *:not(.map-canvas):not(.media-cell), .p-overlay * {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
 .modern-layout .page-layout {
   padding-top: 0;
 }
@@ -2463,6 +2493,189 @@ html.is-menu-toggled-on {
 .modern-layout .page-current {
   visibility: visible;
   z-index: 1;
+}
+
+.page-title + .section-title, .section-title:first-child {
+  margin-top: 2em;
+}
+
+.section-title {
+  margin: 2em 0 2em;
+  position: relative;
+  z-index: 10;
+}
+.center {
+  text-align: center;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.section-title h2:after, .section-title h2:before {
+  background-color: #75ad6f;
+}
+
+.section-title h2:after, .section-title h2:before {
+  background-color: #7DB376;
+}
+.section-title h2:before {
+  bottom: auto;
+  top: -.5em;
+  left: -1.57em;
+  z-index: -1;
+}
+.section-title h2:after, .section-title h2:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -.5em;
+  width: 2em;
+  height: 100%;
+  background-color: #7DB376;
+  pointer-events: none;
+}
+
+.service {
+  padding: 0.2em 0;
+}
+
+.service p {
+  margin-top: .2em;
+  margin-left: 68px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(28, 38, 43, 0.5);
+}
+
+.process p, .fun-fact p, .service p:first-of-type {
+  margin: 0;
+}
+
+.service h4 {
+  margin-top: 0;
+  margin-left: 68px;
+  margin-bottom: .3em;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.process {
+  position: relative;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  padding: 16px 10px;
+  margin: 0 auto 1.6em;
+  border-radius: 0 14px 14px 14px;
+  color: #345;
+  background: #fff;
+}
+
+.process p, .fun-fact p, .service p:first-of-type {
+  margin: 0;
+}
+
+.process i {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.process h4 {
+  margin: 0;
+  font-size: 10px;
+}
+
+.process:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 120%;
+  height: 0;
+  border-bottom: 3px dashed #fff;
+}
+
+.fun-fact {
+    padding-right: 1em;
+    margin-bottom: 1.4em;
+    text-align: center;
+}
+
+.fun-fact i {
+    display: inline-block;
+    margin-bottom: 12px;
+    line-height: 1;
+    font-size: 38px;
+}
+
+.fun-fact h4 {
+    max-width: 140px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .process {
+    width: 108px;
+    height: 108px;
+    padding: 20px 10px;
+  }
+
+  .fun-fact h4 {
+    margin-left: 82px;
+    padding-top: 16px;
+    max-width: 160px;
+    font-size: 14px;
+}
+
+  .fun-fact i {
+    float: left;
+    font-size: 66px;
+}
+
+  .fun-fact {
+    padding-right: 0em;
+    margin-bottom: 0em;
+    text-align: left;
+}
+
+  .process h4 {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+
+  .process i {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-title {
+    margin: 3em 0 2em;
+  }
+  .service p {
+    margin-left: 0;
+  }
+  .service {
+    padding: 0.6em 0 0;
+    text-align: center;
+  }
+  .service h4 {
+    margin-left: 0;
+    margin-bottom: .8em;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2473,6 +2686,10 @@ html.is-menu-toggled-on {
   .header {
     height: 100%;
     width: 120px;
+  }
+
+  .row [class^="col-"]:nth-child(n) .process:after {
+    display: inline-block;
   }
 
   .nav-menu a {
