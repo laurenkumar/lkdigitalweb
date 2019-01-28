@@ -2499,6 +2499,22 @@ html.is-menu-toggled-on {
   margin-top: 2em;
 }
 
+.service i, .service img {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    margin: 0;
+    line-height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.aligncenter, .alignnone, .alignright, .alignleft {
+    display: block;
+    margin: 1.6em auto;
+    clear: both;
+}
+
 .section-title {
   margin: 2em 0 2em;
   position: relative;
