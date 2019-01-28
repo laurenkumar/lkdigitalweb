@@ -2186,11 +2186,6 @@ button.swiper-pagination-bullet {
   border-right: 2px solid rgba(255, 255, 255, 0.08);
 }
 
-.menu-toggle:before {
-    content: "\e800";
-    font-size: 18px;
-}
-
 html.is-menu-toggled-on, .is-menu-toggled-on body {
   height: 100%;
 }
