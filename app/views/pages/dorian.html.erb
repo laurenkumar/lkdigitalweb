@@ -1,128 +1,129 @@
-<header id="masthead" class="header" role="banner">
+<div id="main" class="site-main">
+	<header id="masthead" class="header" role="banner">
 
-	<a class="menu-toggle toggle-link">
-	</a>
+		<a class="menu-toggle toggle-link">
+		</a>
 
-	<h1 class="site-title mobile-title">
-		JACK ALLEN					
-	</h1>
-
-	<div class="header-wrap">
-		<img alt="JACK ALLEN" src="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2016/03/avatar.jpg">
-
-		<h1 class="site-title ">
+		<h1 class="site-title mobile-title">
 			JACK ALLEN					
 		</h1>
 
-		<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-			<div class="nav-menu">
-				<ul class="menu-auto">
-					<li class="">
-						<a href="#/home">
-							<i class="fas fa-home"></i>
-						</i>home
-					</a>
-				</li>
-				<li class="">
-					<a href="#/about-me">
-						<i class="far fa-user-circle"></i>
-					</i>about me
-				</a>
-			</li>
-			<li class="">
-				<a href="#/resume">
-					<i class="far fa-address-card"></i>
-				</i>resume
-			</a>
-		</li>
+		<div class="header-wrap">
+			<img alt="JACK ALLEN" src="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2016/03/avatar.jpg">
 
-		<li class="">
-			<a href="#/contact">
-				<i class="fas fa-map-marker-alt"></i>
-			</i>contact
-		</a>
-	</li>
-</ul>
+			<h1 class="site-title ">
+				JACK ALLEN					
+			</h1>
 
-<script>
-	jQuery(document).ready(function($)
-	{
-		var menu_html = "";
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<div class="nav-menu">
+					<ul class="menu-auto">
+						<li class="">
+							<a href="#/home">
+								<i class="fas fa-home"></i>
+								home
+							</a>
+						</li>
+						<li class="">
+							<a href="#/about-me">
+								<i class="far fa-user-circle"></i>
+								about me
+							</a>
+						</li>
+						<li class="">
+							<a href="#/resume">
+								<i class="far fa-address-card"></i>
+								resume
+							</a>
+						</li>
 
-		$('#main').find('section').each(function()
-		{
-			var id        = $(this).attr('id');
-			var icon      = $(this).find('.page-title  i').attr('class');
-			var title     = $(this).find('.page-title input').val();
-			var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"></i>' + title + '</a></li>';
+						<li class="">
+							<a href="#/contact">
+								<i class="fas fa-map-marker-alt"></i>
+								contact
+							</a>
+						</li>
+					</ul>
 
-			menu_html += menu_item;
-			$('.menu-auto').html(menu_html);
-		});
-	});
-</script>
-</div>
-</nav>
+					<script>
+						jQuery(document).ready(function($)
+						{
+							var menu_html = "";
 
-<div class="header-search">
-	<form role="search" id="search-form" method="get" action="http://themes.pixelwars.org/empathy/demo/">
-		<input type="text" id="search" name="s" required="required" placeholder="enter word">
-		<input type="submit" id="search-submit" title="Search" value="→">
-	</form>
-</div>
+							$('#main').find('section').each(function()
+							{
+								var id        = $(this).attr('id');
+								var icon      = $(this).find('.page-title  i').attr('class');
+								var title     = $(this).find('.page-title input').val();
+								var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"></i>' + title + '</a></li>';
 
-<div class="header-bottom">
-	<div class="textwidget">
-		<ul class="social">
-			<li>
-				<a target="_blank" class="facebook" href="#">
-				</a>
-			</li>
-			<li>
-				<a target="_blank" class="twitter" href="#">
-				</a>
-			</li>
-			<li>
-				<a target="_blank" class="linkedin" href="#">
-				</a>
-			</li>
-			<li>
-				<a target="_blank" class="instagram" href="#">
-				</a>
-			</li>
-		</ul>
-	</div>
+								menu_html += menu_item;
+								$('.menu-auto').html(menu_html);
+							});
+						});
+					</script>
+				</div>
+			</nav>
 
-	<div class="copy-text">
-		<div id="text-2" class="widget_text">			
-			<div class="textwidget">
-				<p>© 2018 LK Digital</p>
+			<div class="header-search">
+				<form role="search" id="search-form" method="get" action="http://themes.pixelwars.org/empathy/demo/">
+					<input type="text" id="search" name="s" required="required" placeholder="enter word">
+					<input type="submit" id="search-submit" title="Search" value="→">
+				</form>
 			</div>
-		</div>											
+
+			<div class="header-bottom">
+				<div class="textwidget">
+					<ul class="social">
+						<li>
+							<a target="_blank" class="facebook" href="#">
+							</a>
+						</li>
+						<li>
+							<a target="_blank" class="twitter" href="#">
+							</a>
+						</li>
+						<li>
+							<a target="_blank" class="linkedin" href="#">
+							</a>
+						</li>
+						<li>
+							<a target="_blank" class="instagram" href="#">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="copy-text">
+					<div id="text-2" class="widget_text">			
+						<div class="textwidget">
+							<p>© 2018 LK Digital</p>
+						</div>
+					</div>											
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="main" class="site-main">
+		<%= link_to root_path, class: 'centered' do %>
+		<%= image_tag 'LogoLKDigital.png', alt: 'logo lkdigital', id: 'height_logo' %>
+		<% end %>
 	</div>
-</div>
-</div>
-</header>
 
-<div id="main" class="site-main">
-	<%= link_to root_path, class: 'centered' do %>
-	<%= image_tag 'LogoLKDigital.png', alt: 'logo lkdigital', id: 'height_logo' %>
-	<% end %>
-</div>
+	<script>
 
-<script>
-
-	/* global variables */
-	var classicLayout = false;
-	var portfolioKeyword;
-	var mapCanvas;
+		/* global variables */
+		var classicLayout = false;
+		var portfolioKeyword;
+		var mapCanvas;
 
 
-	(function($) { "use strict"; 
+		(function($) { "use strict"; 
 
 
-		/* DOCUMENT LOAD */
-		$(function() {
+			/* DOCUMENT LOAD */
+			$(function() {
 
 
 
@@ -182,7 +183,7 @@
 	});
 
 
-	
+
 	// ------------------------------
 	// SET CURRENT MENU ITEM
 	function setCurrentMenuItem() {
@@ -595,3 +596,4 @@
 
 })(jQuery);
 </script>
+</div>

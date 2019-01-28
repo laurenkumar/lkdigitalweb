@@ -2191,6 +2191,31 @@ button.swiper-pagination-bullet {
     font-size: 18px;
 }
 
+html.is-menu-toggled-on, .is-menu-toggled-on body {
+  height: 100%;
+}
+
+html.is-menu-toggled-on {
+  position: relative;
+}
+
+.is-menu-toggled-on .page-current, .is-menu-toggled-on .site, .is-menu-toggled-on .site-main {
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.site, .site-main {
+    height: 100%;
+}
+
+.is-menu-toggled-on body {
+      height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
 .csstransforms.is-menu-toggled-on body {
     left: 0;
     -ms-transform: translate(120px,0px);
