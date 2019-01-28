@@ -2834,6 +2834,29 @@ html.is-menu-toggled-on {
   background: #1c262b;
 }
 
+.link-main {
+    color: #444;
+    z-index: 9999999;
+    position: absolute;
+    top: 22%;
+    left: 89%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: #ADE900;
+  }
+
+  .link-sop {
+    z-index: 9999999;
+    position: absolute;
+    top: 40%;
+    left: 89.5%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background: #ADE900;
+  }
+
 @media screen and (min-width: 1200px) {
   .link-main {
     color: #444;
@@ -2858,7 +2881,7 @@ html.is-menu-toggled-on {
     padding: 10px;
     background: #ADE900;
   }
-  
+
   .process {
     width: 108px;
     height: 108px;
