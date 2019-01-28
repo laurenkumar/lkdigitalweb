@@ -2459,8 +2459,12 @@ html.is-menu-toggled-on {
 .page-layout .content {
   position: relative;
   z-index: 10;
-  background-color: #444;
+  background-color: transparent;
   text-align: left;
+}
+
+#resume .page-layout .content {
+  background-color: #444;
 }
 
 .content > div {
