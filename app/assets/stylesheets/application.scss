@@ -2459,7 +2459,7 @@ html.is-menu-toggled-on {
 .page-layout .content {
   position: relative;
   z-index: 10;
-  background-color: white;
+  background-color: #444;
   text-align: left;
 }
 
@@ -2740,7 +2740,7 @@ html.is-menu-toggled-on {
     left: 0;
     width: 0;
     height: 100%;
-    background: #444;
+    background: #ADE900;
     border-radius: 16px;
     -webkit-transition: width 1s ease-out;
     transition: width 1s ease-out;
@@ -2784,7 +2784,7 @@ html.is-menu-toggled-on {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: #444;
+    background: #1c262b;
 }
 
 @media screen and (min-width: 1200px) {
