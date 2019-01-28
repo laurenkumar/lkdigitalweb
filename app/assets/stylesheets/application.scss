@@ -2197,6 +2197,8 @@ html.is-menu-toggled-on, .is-menu-toggled-on body {
 
 html.is-menu-toggled-on {
   position: relative;
+      overflow: initial;
+    overflow-x: initial;
 }
 
 .is-menu-toggled-on .page-current, .is-menu-toggled-on .site, .is-menu-toggled-on .site-main {
