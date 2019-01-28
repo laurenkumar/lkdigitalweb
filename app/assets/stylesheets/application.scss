@@ -2491,23 +2491,23 @@ html.is-menu-toggled-on {
 }
 
 .section-title h2 i:before {
-    bottom: auto;
-    top: -.5em;
-    border-bottom: 0.5em solid #080b0c;
-    border-bottom: 0.5em solid rgba(8, 11, 12, 0.2);
-    border-left: .5em solid transparent;
+  bottom: auto;
+  top: -.5em;
+  border-bottom: 0.5em solid #080b0c;
+  border-bottom: 0.5em solid rgba(8, 11, 12, 0.2);
+  border-left: .5em solid transparent;
 }
 
 .section-title h2 i:after, h2 i:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    bottom: -.5em;
-    left: -.05em;
-    pointer-events: none;
-    -webkit-mask: none;
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -.5em;
+  left: -.05em;
+  pointer-events: none;
+  -webkit-mask: none;
 }
 
 .modern-layout .page-current {
@@ -2520,19 +2520,19 @@ html.is-menu-toggled-on {
 }
 
 .service i, .service img {
-    display: inline-block;
-    float: left;
-    width: 50px;
-    margin: 0;
-    line-height: 50px;
-    font-size: 40px;
-    text-align: center;
+  display: inline-block;
+  float: left;
+  width: 50px;
+  margin: 0;
+  line-height: 50px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .aligncenter, .alignnone, .alignright, .alignleft {
-    display: block;
-    margin: 1.6em auto;
-    clear: both;
+  display: block;
+  margin: 1.6em auto;
+  clear: both;
 }
 
 .section-title {
@@ -2617,25 +2617,25 @@ html.is-menu-toggled-on {
 }
 
 .fun-fact {
-    padding-right: 1em;
-    margin-bottom: 1.4em;
-    text-align: center;
+  padding-right: 1em;
+  margin-bottom: 1.4em;
+  text-align: center;
 }
 
 .fun-fact i {
-    display: inline-block;
-    margin-bottom: 12px;
-    line-height: 1;
-    font-size: 38px;
+  display: inline-block;
+  margin-bottom: 12px;
+  line-height: 1;
+  font-size: 38px;
 }
 
 .fun-fact h4 {
-    max-width: 140px;
-    margin: 0 auto;
-    font-size: 12px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: uppercase;
+  max-width: 140px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 1200px) {
@@ -2650,18 +2650,18 @@ html.is-menu-toggled-on {
     padding-top: 16px;
     max-width: 160px;
     font-size: 14px;
-}
+  }
 
   .fun-fact i {
     float: left;
     font-size: 66px;
-}
+  }
 
   .fun-fact {
     padding-right: 0em;
     margin-bottom: 0em;
     text-align: left;
-}
+  }
 
   .process h4 {
     font-size: 11px;
@@ -2687,6 +2687,14 @@ html.is-menu-toggled-on {
   .service h4 {
     margin-left: 0;
     margin-bottom: .8em;
+  }
+  .service i, .service img {
+    float: none;
+    width: auto;
+    max-width: 84px;
+    line-height: 1;
+    font-size: 64px;
+    margin-bottom: 18px;
   }
 }
 
