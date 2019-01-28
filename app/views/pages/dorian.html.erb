@@ -25,21 +25,21 @@
 				<div class="nav-menu">
 					<ul class="menu-auto">
 						<li class="">
-							<a href="#/home">
+							<a href="#/home" data="home">
 								<i class="fas fa-home fa-2x	">
 								</i>
 								home
 							</a>
 						</li>
 						<li class="">
-							<a href="#/about-me">
+							<a href="#/about-me" data="about-me">
 								<i class="far fa-user-circle fa-2x	">
 								</i>
 								about me
 							</a>
 						</li>
 						<li class="">
-							<a href="#/resume">
+							<a href="#/resume" data="resume">
 								<i class="far fa-address-card fa-2x	">
 								</i>
 								resume
@@ -47,7 +47,7 @@
 						</li>
 
 						<li class="">
-							<a href="#/contact">
+							<a href="#/contact" data="contact">
 								<i class="fas fa-map-marker-alt fa-2x">
 								</i>
 								contact
@@ -353,7 +353,12 @@
 
 			$(function() {
 
+				$('.nav-menu a').on("click", function() {
+					var id = $(this).attr("data");
+					$('.pt-page').removeClass('page-current');
+					$('#' + id).addClass('page-current');
 
+				}
 
 
 				$('.search-toggle').on("click", function() {
