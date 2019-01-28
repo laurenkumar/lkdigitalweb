@@ -111,12 +111,6 @@
 </div>
 
 <script>
-	/*
-	Name: Empathy
-	Description: Responsive HTML5 vCard Template
-	Version: 1.0.1
-	Author: pixelwars
-*/
 
 /* global variables */
 var classicLayout = false;
@@ -307,51 +301,7 @@ var mapCanvas;
 		
 		
 		
-		// ------------------------------
-		/* jQuery Ajax Mail Send Script */	
-		var contactForm = $( '#contact-form' );
-		var $alert = $('.site-alert');
-		var $submit = contactForm.find('.submit');
 		
-		contactForm.submit(function()
-		{
-			if (contactForm.valid())
-			{
-				NProgress.start();
-				$submit.addClass("active loading");
-				var formValues = contactForm.serialize();
-				
-				$.post(contactForm.attr('action'), formValues, function(data)
-				{
-					if ( data == 'success' ) {
-						contactForm.clearForm();
-					}
-					else {
-						$alert.addClass('error');
-					}
-					NProgress.done();
-					$alert.show();
-					setTimeout(function() { $alert.hide(); },6000)
-				});
-			}
-			return false
-		});
-
-		$.fn.clearForm = function() {
-			return this.each(function() {
-				var type = this.type, tag = this.tagName.toLowerCase();
-				if (tag == 'form')
-					return $(':input',this).clearForm();
-				if (type == 'text' || type == 'password' || tag == 'textarea')
-					this.value = '';
-				else if (type == 'checkbox' || type == 'radio')
-					this.checked = false;
-				else if (tag == 'select')
-					this.selectedIndex = -1;
-			});
-		};
-		// ------------------------------
-        
         
         
 		// ------------------------------
@@ -722,104 +672,7 @@ var mapCanvas;
 
 	
 	
-	// ------------------------------
-	// AJAX PORTFOLIO DETAILS
-	var pActive;
 	
-	function showProjectDetails(url) {
-		
-		showLoader();
-		
-		var p = $('.p-overlay:not(.active)').first();
-		pActive = $('.p-overlay.active');
-		
-		// ajax : fill data
-		p.empty().load(url + ' .portfolio-single', function() {	
-			NProgress.set(0.5);
-			
-			// wait for images to be loaded
-			p.imagesLoaded(function() {
-				
-				// for galleries in ajax pulled content
-				setupMasonry();
-				
-				if(pActive.length) {
-					hideProjectDetails();	  
-				}
-				
-				hideLoader();
-				
-				$('html').addClass('p-overlay-on');
-				
-				$("body").scrollTop(0);
-								
-				// setup plugins
-				setup();
-
-				if(classicLayout) {
-					p.show();	
-				} else {
-					p.removeClass('animate-in animate-out').addClass('animate-in').show();		
-				}
-				
-				p.addClass('active');
-				
-			});
-		});
-	}
-	
-	function hideProjectDetails(forever, safeClose) {
-		
-		$("body").scrollTop(0);
-		
-		// close completely by back link.
-		if(forever) {
-			pActive = $('.p-overlay.active');
-			
-			$('html').removeClass('p-overlay-on');
-			
-			if(!safeClose) {
-				// remove detail url
-				$.address.path(portfolioKeyword);
-			}
-		}
-		
-		pActive.removeClass('active');
-		
-		if(classicLayout) {
-			pActive.hide().empty();	
-		} else {
-			pActive.removeClass('animate-in animate-out').addClass('animate-out').show();	
-			setTimeout(function() { pActive.hide().removeClass('animate-out').empty(); } ,10)	
-		}
-	}
-	
-	function giveDetailUrl() {
-	
-		var address = $.address.value();
-		var detailUrl;
-		
-		if (address.indexOf("/"+ portfolioKeyword + "/")!=-1 && address.length > portfolioKeyword.length + 2 ) {
-			var total = address.length;
-			detailUrl = address.slice(portfolioKeyword.length+2,total);
-		} else {
-			detailUrl = -1;	
-		}
-		return detailUrl;
-	}
-	// ------------------------------
-	
-	
-	
-	// ------------------------------
-	// AJAX LOADER
-	function showLoader() {
-		NProgress.start();
-	}
-	function hideLoader() {
-		NProgress.done();
-	}
-	// ------------------------------
 	
 	
 	
