@@ -2427,6 +2427,10 @@ html.is-menu-toggled-on {
   background-color: white;
 }
 
+.bg-diff .page-footer a i {
+  color: #444;
+}
+
 .one-page-layout .page-layout {
   visibility: hidden;
 }
@@ -2449,12 +2453,12 @@ html.is-menu-toggled-on {
 }
 
 .modern-layout .page-layout {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .modern-layout .page-current {
-    visibility: visible;
-    z-index: 1;
+  visibility: visible;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
