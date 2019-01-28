@@ -2642,6 +2642,150 @@ html.is-menu-toggled-on {
   text-transform: uppercase;
 }
 
+.event {
+    position: relative;
+    padding: 0 1em 2em 2.4em;
+}
+
+.event:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: -10px;
+    left: 12px;
+    width: 4px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.event h2 {
+    margin-left: .6em;
+    margin-bottom: .4em;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.event p:last-child {
+    margin-bottom: 0;
+}
+
+.event p {
+    margin: .6em 0 .2em 0;
+    font-size: 15px;
+}
+
+.event h2 + p i, .event h2 + p img {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: -14px;
+    left: -10px;
+    width: 52px;
+    line-height: 52px;
+    margin: 0;
+    z-index: 120;
+    color: #fff;
+    background: #8ACB82;
+    border-radius: 50%;
+}
+
+.event h3 {
+    display: inline-block;
+    position: relative;
+    padding: 3px 8px;
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin: 0 0 1.5em 0;
+    text-transform: uppercase;
+    color: #fff;
+    background: #8ACB82;
+}
+
+.event h4 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 .2em 0;
+    padding: 0;
+}
+
+.skill-unit {
+    padding-bottom: 1.1em;
+    padding-right: 32px;
+}
+
+.skill-unit h4 {
+    margin: 0 0 4px 0;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    z-index: 100;
+    padding-left: 0px;
+}
+
+.skill-unit .bar {
+    position: relative;
+    width: 100%;
+    height: 8px;
+}
+
+.skill-unit .bar .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    border-radius: 16px;
+    -webkit-transition: width 1s ease-out;
+    transition: width 1s ease-out;
+}
+
+.skill-unit .bar .progress span {
+    position: absolute;
+    top: -19px;
+    left: 100%;
+    margin-left: -2px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    width: 42px;
+    line-height: 42px;
+    color: #345;
+    padding: 0 6px;
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 50%;
+}
+
+.event h5 {
+    margin: 0;
+    padding: 0 0 .3em 0;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(28, 38, 43, 0.35);
+}
+
+.event:nth-of-type(2):after {
+    background-color: #8acb82;
+}
+
+.event:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+}
+
 @media screen and (min-width: 1200px) {
   .process {
     width: 108px;
@@ -2703,6 +2847,14 @@ html.is-menu-toggled-on {
 }
 
 @media screen and (min-width: 768px) {
+  .event {
+    padding: 0 1em 3em 4em;
+}
+
+.event h3 {
+    margin-left: -1.6em;
+}
+
   .modern-layout .site-main {
     left: 120px;
     margin: 0;
