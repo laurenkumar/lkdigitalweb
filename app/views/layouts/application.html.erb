@@ -20,10 +20,11 @@
   <%= render 'shared/navbar' %>
 
   <%= yield %>
-
+  <% if current_page?('/') %>
   <div class="mouse">
     <div class="scroll"></div>
   </div>
+  <% end %>
 
   <!-- Footer -->
   <footer class="page-footer font-small">
