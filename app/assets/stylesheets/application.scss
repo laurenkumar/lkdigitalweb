@@ -2459,6 +2459,7 @@ html.is-menu-toggled-on {
 .page-layout .content {
   position: relative;
   z-index: 10;
+  background-color: white;
   text-align: left;
 }
 
@@ -2654,7 +2655,7 @@ html.is-menu-toggled-on {
     bottom: -10px;
     left: 12px;
     width: 4px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(172, 220, 136, 0.5);
 }
 
 .event h2 {
@@ -2772,7 +2773,7 @@ html.is-menu-toggled-on {
 }
 
 .event:nth-of-type(2):after {
-    background-color: #8acb82;
+    background-color: #ADE900;
 }
 
 .event:after {
@@ -2783,7 +2784,7 @@ html.is-menu-toggled-on {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: #fff;
+    background: #444;
 }
 
 @media screen and (min-width: 1200px) {
