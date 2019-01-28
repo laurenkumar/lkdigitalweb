@@ -1,0 +1,507 @@
+<div id="page" class="hfeed site">
+	<header id="masthead" class="header" role="banner">
+
+		<a class="menu-toggle toggle-link mx-auto">
+			<span class="menu-icon__line mx-auto " style="margin-top: 15px; width: 30px !important;">
+			</span>
+			<span class="menu-icon__line mx-auto" style="width: 30px !important;">
+			</span>
+			<span class="menu-icon__line mx-auto" style="width: 30px !important;">
+			</span>
+		</a>
+
+		<h1 class="site-title mobile-title">
+			Sopika Uthayakumar					
+		</h1>
+
+		<div class="header-wrap">
+			<img alt="Sopika Uthayakumar" src="http://themes.pixelwars.org/empathy/demo/wp-content/uploads/2016/03/avatar.jpg">
+
+			<h1 class="site-title ">
+				Sopika Uthayakumar					
+			</h1>
+
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<div class="nav-menu">
+					<ul class="menu-auto">
+						<li class="">
+							<a href="#/home" data="home">
+								<i class="fas fa-home fa-2x	">
+								</i>
+								home
+							</a>
+						</li>
+						<li class="">
+							<a href="#/about-me" data="about-me">
+								<i class="far fa-user-circle fa-2x	">
+								</i>
+								about me
+							</a>
+						</li>
+						<li class="">
+							<a href="#/resume" data="resume">
+								<i class="far fa-address-card fa-2x	">
+								</i>
+								resume
+							</a>
+						</li>
+
+						<li class="">
+							<a href="#/contact" data="contact">
+								<i class="fas fa-map-marker-alt fa-2x">
+								</i>
+								contact
+							</a>
+						</li>
+					</ul>
+
+					<script>
+						jQuery(document).ready(function($)
+						{
+							var menu_html = "";
+
+							$('#main').find('section').each(function()
+							{
+								var id        = $(this).attr('id');
+								var icon      = $(this).find('.page-title  i').attr('class');
+								var title     = $(this).find('.page-title input').val();
+								var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"></i>' + title + '</a></li>';
+
+								menu_html += menu_item;
+								$('.menu-auto').html(menu_html);
+							});
+						});
+					</script>
+				</div>
+			</nav>
+
+			<div class="header-bottom">
+				<div class="textwidget">
+					<ul class="social">
+						<li>
+							<a target="_blank" class="facebook" href="#">
+								<i class="fab fa-facebook-f">
+								</i>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" class="linkedin" href="#">
+								<i class="fab fa-linkedin">
+								</i>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" class="instagram" href="#">
+								<i class="fab fa-instagram">
+								</i>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="copy-text">
+					<div id="text-2" class="widget_text">			
+						<div class="textwidget">
+							<p>© 2019 LK Digital</p>
+						</div>
+					</div>											
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<a href="/" class="link-main">To the website</a>
+	<a href="/sopika" class="link-sop">To Sopika</a>
+
+	<div id="main" class="site-main">
+		<div id="home" class="pt-page page-layout home-section page-current">
+			<%= link_to root_path, class: 'centered' do %>
+			<%= image_tag 'LogoLKDigital.png', alt: 'logo lkdigital', id: 'height_logo' %>
+			<% end %>
+			<div class="layout-medium centeredtext text-center">
+				<h2 style="font-weight: bold;">Sopika Uthayakumar</h2>
+			</div>
+		</div>
+
+		<div id="about-me" class="pt-page page-layout ">
+			<div class="content">
+				<div class="layout-medium">
+					<h1 class="page-title">
+						about me														
+					</h1> <!-- .page-title -->
+					<div class="section-title center">
+						<h2 style="background: #444;padding: 10px;color: white;">
+							Services
+						</h2>
+					</div>
+					<div class="row" style="background: white; padding: 15px;    box-shadow: 40px 40px 22px -22px #ADE900;">
+						<div class="col-sm-6 col-md-4">
+							<div class="service">
+								<p>
+									<%= image_tag 'icon-02.png', alt: 'icone web dev', class: "alignnone size-full" %>
+								</p>
+								<h4>WEB DEV</h4>
+								<p>I can design beautiful type faces for both digital and print media. It is a long established fact that a reader will be distracted.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="service">
+								<p>
+									<%= image_tag 'icon-03.png', alt: 'icone management', class: "alignnone size-full" %>
+								</p>
+								<h4>MANAGEMENT</h4>
+								<p>I write about web design. It is a long established fact that a reader will be distracted by the readable content.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="service">
+								<p>
+									<%= image_tag 'icon-04.png', alt: 'icone problem solver', class: "alignnone size-full" %>
+								</p>
+								<h4>PROBLEM SOLVER</h4>
+								<p>I have strong project management skills. It is a long established fact that a reader will be distracted by the readable content.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="section-title center">
+						<h2 style="background: #444;padding: 10px;color: white;">
+							Work Process
+						</h2>
+					</div>
+					<div class="row" style="background: white; padding: 15px;    box-shadow: 40px 40px 22px -22px #ADE900;">
+						<div class="col-sm-3 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="far fa-comments"></i>
+								</p>
+								<h4>DISCOVER</h4>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="fas fa-bezier-curve"></i>
+								</p>
+								<h4>DESIGN</h4>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="fas fa-code"></i>
+								</p>
+								<h4>DEVELOP</h4>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-xs-4">
+							<div class="process">
+								<p>
+									<i class="fas fa-rocket"></i>
+								</p>
+								<h4>LAUNCH</h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-title center">
+						<h2 style="background: #444;padding: 10px;color: white;">
+							Fun Fact
+						</h2>
+					</div>
+					<div class="row" style="background: white; padding: 15px;    box-shadow: 40px 40px 22px -22px #ADE900;">
+						<div class="col-sm-4 col-xs-6">
+							<div class="fun-fact">
+								<p>
+									<i class="fas fa-map-marked-alt"></i>
+								</p>
+								<h4>10 Countries Visited</h4>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6">
+							<div class="fun-fact">
+								<p>
+									<i class="far fa-hand-rock"></i>
+								</p>
+								<h4>Love climbing</h4>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6">
+							<div class="fun-fact">
+								<p>
+									<i class="fas fa-coffee"></i>
+								</p>
+								<h4>Only 6 Cups Of Coffee / tea this month</h4>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="resume" class="pt-page page-layout">
+			<div class="content">
+				<div class="layout-medium">
+					<h1 class="page-title">
+						resume														
+					</h1> <!-- .page-title -->
+					<div class="row">
+						<div class="col-sm-7">
+							<div class="event">
+								<h2>WORK HISTORY</h2>
+								<p><i class="pe-7s-ribbon"></i>
+								</p>
+							</div>
+							<div class="event">
+								<h3>Dec 2013 – Current</h3>
+								<h4>Front End Web Developer</h4>
+								<h5>Pixelwars Inc.</h5>
+								<p>I currently work for Pixelwars creative studio. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+								</p>
+							</div>
+							<div class="event">
+								<h3>Jun 2012 – Dec 2013</h3>
+								<h4>Web Developer</h4>
+								<h5>Google Inc.</h5>
+								<p>I worked as a Web Developer at Google for 3 years. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+								</p>
+							</div>
+							<div class="event">
+								<h3>2006</h3>
+								<h4>Exclusive Author</h4>
+								<h5>Envato Inc.</h5>
+								<p>I am an Elite Author at Envato. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+								</p>
+							</div>
+							<div class="event">
+								<h2>EDUCATION</h2>
+								<p><i class="pe-7s-study"></i>
+								</p>
+							</div>
+							<div class="event">
+								<h3>2002</h3>
+								<h4>Atom Science</h4>
+								<h5>Stanford University</h5>
+								<p>I studied atomic stuff at Stanford University. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+								</p>
+							</div>
+							<div class="event">
+								<h3>2010</h3>
+								<h4>Software Engineering</h4>
+								<h5>Harvard University</h5>
+								<p>I got my Master Degree at Harvard University. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+								</p>
+							</div>
+							<div class="event">
+								<h3>2006</h3>
+								<h4>Computer Science</h4>
+								<h5>MIT</h5>
+								<p>I studied Computer Science at MIT. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="section-title center">
+								<h2>Coding Skills</h2>
+							</div>
+							<div class="skill-unit">
+								<h4>HTML5</h4>
+								<div class="bar" data-percent="80">
+									<div class="progress" style="width: 80%;">
+										<span>80</span>
+									</div>
+								</div>
+							</div>
+							<div class="skill-unit">
+								<h4>CSS3</h4>
+								<div class="bar" data-percent="100">
+									<div class="progress" style="width: 100%;">
+										<span>100</span>
+									</div>
+								</div>
+							</div>
+							<div class="skill-unit">
+								<h4>jQuery</h4>
+								<div class="bar" data-percent="80">
+									<div class="progress" style="width: 80%;">
+										<span>80</span>
+									</div>
+								</div>
+							</div>
+							<div class="skill-unit">
+								<h4>WordPress</h4>
+								<div class="bar" data-percent="60">
+									<div class="progress" style="width: 60%;">
+										<span>60</span>
+									</div>
+								</div>
+							</div>
+							<div class="section-title center">
+								<h2>Design Skills</h2>
+							</div>
+							<div class="skill-unit">
+								<h4>Fireworks</h4>
+								<div class="bar" data-percent="90">
+									<div class="progress" style="width: 90%;">
+										<span>90</span>
+									</div>
+								</div>
+							</div>
+							<div class="skill-unit">
+								<h4>Photoshop</h4>
+								<div class="bar" data-percent="70">
+									<div class="progress" style="width: 70%;">
+										<span>70</span>
+									</div>
+								</div>
+							</div>
+							<div class="skill-unit">
+								<h4>Illustrator</h4>
+								<div class="bar" data-percent="50">
+									<div class="progress" style="width: 50%;">
+										<span>50</span>
+									</div>
+								</div>
+							</div>
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" class="pt-page page-layout">
+			<div class="content">
+				<div class="layout-medium mx-auto">
+					<h1 class="page-title">
+						contact														
+					</h1>
+					<div class="section-title center">
+						<h2>Let’s Socialize</h2>
+					</div>
+					<ul class="social">
+						<li><a target="_blank" class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+
+						<li><a target="_blank" class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+
+
+						<li><a target="_blank" class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+
+
+					</ul>
+					<div class="section-title center">
+						<h2>Reach Me</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-6">
+							<div class="fun-fact">
+								<p><i class="fas fa-map-marker-alt"></i></p>
+								<h4>based in Paris, FR</h4>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-6">
+							<div class="fun-fact">
+								<p><i class="far fa-envelope"></i></p>
+								<h4>lauren_d [at] outlook.fr</h4>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6">
+							<div class="fun-fact">
+								<p><i class="far fa-check-circle"></i></p>
+								<h4>Freelance Available</h4>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		var classicLayout = false;
+		var portfolioKeyword;
+		var mapCanvas;
+
+
+		(function($) { "use strict"; 
+
+
+			$(function() {
+
+				$('.nav-menu a').on("click", function() {
+					var id = $(this).attr("data");
+					$('.pt-page').removeClass('page-current');
+					$('#' + id).addClass('page-current');
+
+				});
+
+
+				$('.search-toggle').on("click", function() {
+					$('html').toggleClass('is-search-toggled-on');
+					$( ".search-box input" ).trigger( "focus" );
+				});
+
+				$('.menu-toggle').on("click", function() {
+					$('html').toggleClass('is-menu-toggled-on');
+				});
+
+				if($('html').hasClass('one-page-layout')) {
+
+
+					portfolioKeyword = $('section.portfolio').attr('id');
+
+					classicLayout = $('html').attr('data-classic-layout') === 'true';
+					classicLayout = classicLayout || ($('html').attr('data-mobile-classic-layout') === 'true' && ($(window).width() < 1025));
+					classicLayout = classicLayout || !Modernizr.cssanimations;
+
+					if(classicLayout) { 
+						$('html').addClass('classic-layout');	
+						setActivePage();
+						$.address.change(function() {
+							setActivePage();
+							$('html').removeClass('is-menu-toggled-on');
+						});
+					} else { 
+						$('html').addClass('modern-layout');
+					}
+
+					$('.nav-menu a').on("click", function() {
+						if( window.isAnimating ) {
+							return false;
+						}
+					});
+
+
+				}
+
+			});
+
+
+
+			function setCurrentMenuItem() {
+				var activePageId = $('.pt-page.page-current').attr('id');
+				$('.nav-menu a[href$=' + activePageId +']').parent().addClass('current_page_item').siblings().removeClass('current_page_item');
+			}	
+
+
+
+
+
+
+
+		})(jQuery);
+	</script>
+</div>

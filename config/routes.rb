@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'us' => 'pages#us'
   get 'educ' => 'pages#educ'
   get 'dorian' => 'pages#dorian'
+  get 'sopika' => 'pages#sopika'
 
 end
