@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get 'educ' => 'pages#educ'
   get 'dorian' => 'pages#dorian'
   get 'sopika' => 'pages#sopika'
+  get 'jananika' => 'pages#jananika'
 
 end

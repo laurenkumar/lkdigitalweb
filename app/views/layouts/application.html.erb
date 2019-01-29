@@ -63,6 +63,26 @@
         <!-- Grid row-->
 
       </div>
+      <% if current_page?('/dorian') %>
+      <div class="footer-copyright text-center">
+        <a href="/" class="link-main">To the website</a>
+        <a href="/sopika" class="link-sop">Next</a>
+      </div>
+      <% end %>
+      <% if current_page?('/sopika') %>
+      <div class="footer-copyright text-center">
+        <a href="/dorian" class="link-main">Prev</a>
+        <a href="/" class="link-main">To the website</a>
+        <a href="/jananika" class="link-sop">Next</a>
+      </div>
+      <% end %>
+      <% if current_page?('/jananika') %>
+      <div class="footer-copyright text-center">
+        <a href="/sopika" class="link-main">Prev</a>
+        <a href="/" class="link-main">To the website</a>
+        <a href="/dorian" class="link-sop">Next</a>
+      </div>
+      <% end %>
       <!-- Footer Elements -->
       <% if current_page?('/') %>
       <!-- Copyright -->
@@ -70,6 +90,8 @@
         <a href="mailto:lauren_d@outlook.fr"> lauren_d@outlook.fr</a>
       </div>
       <% end %>
+
+      
       <!-- Copyright -->
 
     </footer>
