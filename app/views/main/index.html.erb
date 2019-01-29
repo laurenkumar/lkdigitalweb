@@ -6,7 +6,7 @@
 		<%= image_tag 'LogoLKDigital.png', alt: 'logo lkdigital', id: 'height_logo' %>
 		<% end %>
 
-		<div class="d-sm-none d-md-block" style="position: absolute;
+		<div class="d-none d-lg-block" style="position: absolute;
 		top: 50%;
 		left: 74%;
 		-webkit-transform: translate(-50%, -50%);
@@ -122,61 +122,46 @@
 			<div class="page-wrap">
 
 				<div id="home-slider">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide swiper-slide-one">
-								<div class="swiper-image" data-swiper-parallax-y="-20%">
-									<div class="swiper-image-inner swiper-image-left swiper-image-one">
-										<h1>A <span class="emphasis">Breath</span>. <br>
-											<span>Of Fresh Air.</span>
-										</h1>
-										<p>Chapter I, page XV</p>
-									</div>
+					<div class="blog-slider">
+						<div class="blog-slider__wrp swiper-wrapper">
+							<div class="blog-slider__item swiper-slide">
+								<div class="blog-slider__img">
+
+									<img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg" alt="">
 								</div>
-								<div class="swiper-image" data-swiper-parallax-y="35%">
-									<div class="swiper-image-inner swiper-image-right swiper-image-two">
-									</div>
+								<div class="blog-slider__content">
+									<span class="blog-slider__code">26 December 2019</span>
+									<div class="blog-slider__title">Lorem Ipsum Dolor</div>
+									<div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+									<a href="#" class="blog-slider__button">READ MORE</a>
 								</div>
 							</div>
-							<div class="swiper-slide swiper-slide-two">
-								<div class="swiper-image" data-swiper-parallax-y="-20%">
-									<div class="swiper-image-inner swiper-image-left swiper-image-three">
-										<h1>The <span class="emphasis">Drop</span>. <br>
-											<span>Of Eternal life.</span>
-										</h1>
-										<p>Chapter II, page VII</p>
-									</div>
+							<div class="blog-slider__item swiper-slide">
+								<div class="blog-slider__img">
+									<img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg" alt="">
 								</div>
-								<div class="swiper-image" data-swiper-parallax-y="35%">
-									<div class="swiper-image-inner swiper-image-right swiper-image-four">
-										<p class="paragraph">
-											A thirsty Crow found a Pitcher with some water in it, but so little was there that, try as she might, she could not reach it with her beak, and it seemed as though she would die of thirst within sight of the remedy.
-										</p>
-									</div>
+								<div class="blog-slider__content">
+									<span class="blog-slider__code">26 December 2019</span>
+									<div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+									<div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+									<a href="#" class="blog-slider__button">READ MORE</a>
 								</div>
 							</div>
-							<div class="swiper-slide swiper-slide-three">
-								<div class="swiper-image" data-swiper-parallax-y="-20%">
-									<div class="swiper-image-inner swiper-image-left swiper-image-five">
-										<h1>A <span class="emphasis">Sense</span>. <br>
-											<span>Of Things to Come.</span>
-										</h1>
-										<p>Chapter III, page XI</p>
-									</div>
+
+							<div class="blog-slider__item swiper-slide">
+								<div class="blog-slider__img">
+									<img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
 								</div>
-								<div class="swiper-image" data-swiper-parallax-y="35%">
-									<div class="swiper-image-inner swiper-image-right swiper-image-six">
-										<p class="paragraph">
-											Every man carries Two Bags about with him, one in front and one behind, and both are packed full of faults. The Bag in front contains his neighbours’ faults, the one behind his own. Hence it is that men do not see their own faults, but never fail to see
-											those of others.
-										</p>
-									</div>
+								<div class="blog-slider__content">
+									<span class="blog-slider__code">26 December 2019</span>
+									<div class="blog-slider__title">Lorem Ipsum Dolor</div>
+									<div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+									<a href="#" class="blog-slider__button">READ MORE</a>
 								</div>
 							</div>
 
 						</div>
-						<div class="swiper-pagination">
-						</div>
+						<div class="blog-slider__pagination"></div>
 					</div>
 				</div>
 
@@ -1300,17 +1285,18 @@ $('.main-wrapper').pagepiling({
                     }
                 });
 
-var mySwiper = new Swiper(".swiper-container", {
-	direction: "horizontal",
-	loop: true,
-	pagination: ".swiper-pagination",
-	grabCursor: true,
-	speed: 4000,
-	paginationClickable: true,
-	parallax: true,
-	autoplay: true,
-	effect: "slide",
-	mousewheelControl: 1
+var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
 });
 
 var TxtRotate = function(el, toRotate, period) {
