@@ -30,10 +30,10 @@
 			<section id="page">
 				<div id="mainContent" role="main" data-content-field="main-content">
 					<div class="layout grid-12 columns-12 mt-3" data-type="page" data-updated-on="" id="">
-						<div class="row row" id="">
+						<div class="row " id="">
 							<div class="col col-12 span-12">
 								<div class="row row">
-									<div class="col col-4 span-4">
+									<div class="col col-sm-4 span-4">
 										<div class="block html-block block-html" data-block-type="" id="">
 											<div class="block-content">
 												<h2>THE SHORT</h2>
@@ -44,7 +44,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col col-4 span-4">
+									<div class="col col-sm-4 span-4">
 										<div class="block html-block block-html" data-block-type="" id="">
 											<div class="block-content">
 												<h2>THE LONG</h2>
@@ -60,7 +60,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col col-4 span-4">
+									<div class="col col-sm-4 span-4">
 										<div class="block html-block block-html" data-block-type="2" id="">
 											<div class="block-content">
 												<h4 class="mb-4"><a href="#newyork"><span class="hide-active" style="background-color: #1e2024;
@@ -1235,53 +1235,10 @@ $('.main-wrapper').pagepiling({
 	navigation: false,
 	animateAnchor: true,
 	onLeave: function(index, nextIndex, direction){
-                    //cirkus od animacija
                     if(direction =='up'){
-                    	console.log('animacija za gore');
-
-                        /*TweenMax.fromTo(cityImage, 1.2,
-                            {
-                                y: -30, opacity: 0.6
-                            },
-
-                            {
-                                y: 0, opacity: 1, ease: Sine.easeInOut
-                            }
-                        );
-
-                        TweenMax.fromTo(cityName, 2,
-                            {
-                                y: 30, opacity: 0.6
-                            },
-
-                            {
-                                y: 0, opacity: 1, ease: Sine.easeInOut
-                            }
-                            );*/
                         }
 
                         else if(direction == 'down'){
-                        	console.log('animacija za dolje');
-
-                        /*TweenMax.fromTo(cityImage, 1.2,
-                            {
-                                y: 0, opacity: 0.6
-                            },
-
-                            {
-                                y: -15, opacity: 1, ease: Sine.easeInOut
-                            }
-                        );
-
-                        TweenMax.fromTo(cityName, 2,
-                            {
-                                y: 0, opacity: 0.6
-                            },
-
-                            {
-                                y: 15, opacity: 1, ease: Sine.easeInOut
-                            }
-                            );*/
                         }
                     }
                 });
@@ -1293,7 +1250,6 @@ var swiper = new Swiper('.blog-slider', {
 	mousewheel: {
 		invert: false,
 	},
-      // autoHeight: true,
       pagination: {
       	el: '.blog-slider__pagination',
       	clickable: true,
@@ -1350,7 +1306,6 @@ window.onload = function() {
 			new TxtRotate(elements[i], JSON.parse(toRotate), period);
 		}
 	}
-  // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
