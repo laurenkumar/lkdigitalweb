@@ -1374,6 +1374,12 @@ Home Slider
   }
   
   @media screen and (max-width: 768px) {
+    width: 75%;
+    max-width: 580px;
+    margin-left: 10%;
+  }
+
+  @media screen and (max-width: 576px) {
     width: 50%;
     max-width: 376px;
     margin-left: 10%;
@@ -1441,7 +1447,10 @@ Home Slider
     width: 45%;
   }
   @media screen and (max-width: 768px) {
-    width: 90%;
+    width: 50%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    height: auto;
   }
   @media screen and (max-width: 576px) {
    width: 80%;
@@ -1461,8 +1470,9 @@ Home Slider
     width: 55%;
   }
   @media screen and (max-width: 768px) {
-    margin-top: -80px;
+    margin-top: -50px;
     text-align: center;
+    margin-left: 95%;
     padding: 0 30px;
   }
 
