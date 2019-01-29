@@ -428,45 +428,25 @@
 			</div>
 		</div>
 	</div>
-
 	<script>
-
 		var classicLayout = false;
 		var portfolioKeyword;
 		var mapCanvas;
-
-
 		(function($) { "use strict"; 
-
-
 			$(function() {
-
 				$('.nav-menu a').on("click", function() {
 					var id = $(this).attr("data");
 					$('.pt-page').removeClass('page-current');
 					$('#' + id).addClass('page-current');
-
 				});
-
-
-				$('.search-toggle').on("click", function() {
-					$('html').toggleClass('is-search-toggled-on');
-					$( ".search-box input" ).trigger( "focus" );
-				});
-
 				$('.menu-toggle').on("click", function() {
 					$('html').toggleClass('is-menu-toggled-on');
 				});
-
 				if($('html').hasClass('one-page-layout')) {
-
-
 					portfolioKeyword = $('section.portfolio').attr('id');
-
 					classicLayout = $('html').attr('data-classic-layout') === 'true';
 					classicLayout = classicLayout || ($('html').attr('data-mobile-classic-layout') === 'true' && ($(window).width() < 1025));
 					classicLayout = classicLayout || !Modernizr.cssanimations;
-
 					if(classicLayout) { 
 						$('html').addClass('classic-layout');	
 						setActivePage();
@@ -477,31 +457,17 @@
 					} else { 
 						$('html').addClass('modern-layout');
 					}
-
 					$('.nav-menu a').on("click", function() {
 						if( window.isAnimating ) {
 							return false;
 						}
 					});
-
-
 				}
-
 			});
-
-
-
 			function setCurrentMenuItem() {
 				var activePageId = $('.pt-page.page-current').attr('id');
 				$('.nav-menu a[href$=' + activePageId +']').parent().addClass('current_page_item').siblings().removeClass('current_page_item');
 			}	
-
-
-
-
-
-
-
 		})(jQuery);
 	</script>
 </div>
