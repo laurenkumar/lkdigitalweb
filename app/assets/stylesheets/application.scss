@@ -1336,6 +1336,13 @@ a {
 }
 
 
+#mainContent div .row {
+  background: white;
+  max-height: 25em;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+
 /* projects */
 
 .page-wrap {
@@ -1427,7 +1434,7 @@ Home Slider
    width: 30%;
    flex-shrink: 0;
    height: 300px;
-    box-shadow: 2px 4px 12px 1px #ADE900;
+   box-shadow: 2px 4px 12px 1px #ADE900;
    border-radius: 20px;
    
    overflow: hidden;
