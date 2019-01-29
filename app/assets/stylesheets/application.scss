@@ -1340,6 +1340,7 @@ a {
   background: white;
   max-height: 25em;
   overflow: scroll;
+  padding: 20px;
   text-overflow: ellipsis;
 }
 
@@ -1464,7 +1465,7 @@ Home Slider
    width: 80%;
    margin-bottom: 3em;
    height: 30%;
-   margin-right: 0 !important;  
+   margin-right: 1.5rem !important;  
  }
  @media screen and (max-height: 500px) and (min-width: 992px) {
   height: 270px;
@@ -1486,6 +1487,7 @@ Home Slider
   @media screen and (max-width: 576px) {
     padding: 0;
     margin-top: -40px;
+    width: 98%;
   }
   > * {
     opacity: 0;
