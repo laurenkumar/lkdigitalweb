@@ -1395,6 +1395,12 @@ Home Slider
     max-width: 376px;
     margin-left: 10%;
   }
+
+  @media screen and (max-width: 320px) {
+    width: 58%;
+    max-width: 320px;
+    margin-left: 10%;
+  }
   
   
   @media screen and (max-height: 500px) and (min-width: 992px) {
