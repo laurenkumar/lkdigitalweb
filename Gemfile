@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'modernizr-rails'
 
 gem "dynamic_sitemaps"
+gem 'rails_real_favicon'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
