@@ -271,16 +271,78 @@
 											</div>
 										</div>
 									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+									<script type="application/ld+json">
+										{ "@context" : "http://schema.org",
+										"@type" : "Organization",
+										"address": {
+										"@type": "PostalAddress",
+										"addressLocality": "Paris, France",
+										"postalCode": "F-75013",
+										"streetAddress": "10 rue théroigne de méricourt"
+									},
+									"email": "lauren_d(at)outlook.fr",
+									"member": [
+									{
+										"@type": "Organization"
+									},
+									{
+										"@type": "Organization"
+									},
+									{
+										"@type": "Organization"
+									}
+									],
+									"alumni": [
+									{
+										"@type": "Person",
+										"name": "Dorian Laurenceau"
+									},
+									{
+										"@type": "Person",
+										"name": "Sopika Uthayakumar"
+									},
+									{
+										"@type": "Person",
+										"name": "Jananika Uthayakumar"
+									}
+									],
+									"name": "LK Digital",
+									"telephone": "( 33 6) 12 80 58 00",
+									"url" : "http://lkdigital.herokuapp.com",
+									"contactPoint" : [
+									{ "@type" : "ContactPoint",
+									"telephone" : "+33-6-12-80-12-58",
+									"contactType" : "Contact company",
 
+									"areaServed" : "FR"
+								} , {
+								"@type" : "ContactPoint",
+								"telephone" : "+33-6-12-80-12-58",
+								"contactType" : "customer service"
+							} , {
+							"@type" : "ContactPoint",
+							"telephone" : "+33-6-12-80-12-58",
+							"contactType" : "Dorian",
+							"areaServed" : "FR"
+						} , {
+						"@type" : "ContactPoint",
+						"telephone" : "+33-6-12-80-12-58",
+						"contactType" : "technical support",
 
-			</section>
+						"areaServed" : ["FR"],
+						"availableLanguage" : ["French"]
+					} ] }
+				</script>
+			</div>
 		</div>
 	</div>
+</div>
+</div>
+
+
+</section>
+</div>
+</div>
 
 </div>
 
@@ -1224,13 +1286,13 @@ $('.main-wrapper').pagepiling({
 	navigation: false,
 	animateAnchor: true,
 	onLeave: function(index, nextIndex, direction){
-                    if(direction =='up'){
-                        }
+		if(direction =='up'){
+		}
 
-                        else if(direction == 'down'){
-                        }
-                    }
-                });
+		else if(direction == 'down'){
+		}
+	}
+});
 
 var swiper = new Swiper('.blog-slider', {
 	spaceBetween: 30,
@@ -1239,11 +1301,11 @@ var swiper = new Swiper('.blog-slider', {
 	mousewheel: {
 		invert: false,
 	},
-      pagination: {
-      	el: '.blog-slider__pagination',
-      	clickable: true,
-      }
-  });
+	pagination: {
+		el: '.blog-slider__pagination',
+		clickable: true,
+	}
+});
 
 var TxtRotate = function(el, toRotate, period) {
 	this.toRotate = toRotate;
@@ -1295,10 +1357,10 @@ window.onload = function() {
 			new TxtRotate(elements[i], JSON.parse(toRotate), period);
 		}
 	}
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
+	var css = document.createElement("style");
+	css.type = "text/css";
+	css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+	document.body.appendChild(css);
 };
 
 </script>
