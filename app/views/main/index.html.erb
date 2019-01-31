@@ -2,8 +2,8 @@
 
 	<div class="section city-wrapper mx-auto venice-beach-wrapper" data-anchor="venice-beach">
 
-		<%= link_to root_path, class: 'centered' do %>
-		<%= image_tag 'LogoLKDigital.png', alt: 'LK Digital', id: 'height_logo' %>
+		<%= link_to root_path, class: 'centered', title: "LK Digital" do %>
+		<%= image_tag 'LogoLKDigital.png', alt: 'LK Digital', title: "LK Digital", id: 'height_logo' %>
 		<% end %>
 
 		<div class="d-none d-lg-block" style="position: absolute;
@@ -63,7 +63,7 @@
 									<div class="col-sm-4 span-4">
 										<div class="block html-block block-html" data-block-type="2" id="">
 											<div class="block-content">
-												<h6 class="mb-4"><a href="#newyork"><span class="hide-active" style="background-color: #1e2024;
+												<h6 class="mb-4"><a href="#newyork" title="Contact"><span class="hide-active" style="background-color: #1e2024;
 												color: white;
 												padding: 10px;
 												vertical-align: middle;
@@ -72,7 +72,7 @@
 										</div>
 										<div class="block form-block block-form" data-block-type="9" id="">
 											<div class="block-content">
-												<h6 class="mb-4"><a href="#san-diego"><span class="hide-active" style="background-color: #1e2024;
+												<h6 class="mb-4"><a href="#san-diego" title="Projects"><span class="hide-active" style="background-color: #1e2024;
 												color: white;
 												padding: 10px;
 												vertical-align: middle;
@@ -82,7 +82,7 @@
 												<div class="form-wrapper">
 
 													<div class="form-inner-wrapper">
-														<h6 class="mb-4"><a href="/dorian"><span class="hide-active" style="background-color: #1e2024;
+														<h6 class="mb-4"><a href="/dorian" title="Our Team"><span class="hide-active" style="background-color: #1e2024;
 														color: white;
 														padding: 10px;
 														vertical-align: middle;
@@ -113,55 +113,55 @@
 			<div class="blog-slider__item swiper-slide">
 				<div class="blog-slider__img mr-4">
 
-					<%= image_tag 'lktravel.png', alt: 'LK Travels - Travel blog with interactive maps' %>
+					<%= image_tag 'lktravel.png', alt: 'LK Travels - Travel blog with interactive maps', title: "LK Travels - Travel blog" %>
 				</div>
 				<div class="blog-slider__content">
 					<div class="blog-slider__title">LK Travels</div>
 					<div class="blog-slider__text d-none d-lg-block">Travel blog with interactive map and storytelling.</div>
-					<a href="http://lktravels.fr" class="blog-slider__button">Check It Out</a>
+					<a href="http://lktravels.fr" title="LK Travels" class="blog-slider__button">Check It Out</a>
 				</div>
 			</div>
 			<div class="blog-slider__item swiper-slide">
 				<div class="blog-slider__img mr-4">
-					<%= image_tag 'atypik.jpg', alt: 'AtypikHouse - AirBnB like website and app.' %>
+					<%= image_tag 'atypik.jpg', title: "AtypikHouse - AirBnB like website", alt: 'AtypikHouse - AirBnB like website and app.' %>
 				</div>
 				<div class="blog-slider__content">
 					<div class="blog-slider__title">AtypikHouse</div>
 					<div class="blog-slider__text d-none d-lg-block">A platform where you can find odd places to rent and spend a night to.</div>
-					<a href="https://atypikhouse.herokuapp.com" class="blog-slider__button">Check It Out</a>
+					<a href="https://atypikhouse.herokuapp.com" class="blog-slider__button" title="Atypikhouse">Check It Out</a>
 				</div>
 			</div>
 
 			<div class="blog-slider__item swiper-slide">
 				<div class="blog-slider__img mr-4">
-					<%= image_tag 'yakoi.png', alt: 'Yakoi Podcast Blog.' %>
+					<%= image_tag 'yakoi.png', alt: 'Yakoi Podcast Blog.', title: 'Yakoi Podcast Blog.' %>
 				</div>
 				<div class="blog-slider__content">
 					<div class="blog-slider__title">Yakoi</div>
 					<div class="blog-slider__text d-none d-lg-block">Listen to 3 french friends talk about rap.</div>
-					<a href="http://yakoitalkshow.over-blog.com/" class="blog-slider__button">Check It Out</a>
+					<a href="http://yakoitalkshow.over-blog.com/" title="Yakoi" class="blog-slider__button">Check It Out</a>
 				</div>
 			</div>
 
 			<div class="blog-slider__item swiper-slide">
 				<div class="blog-slider__img mr-4">
-					<%= image_tag 'uthaya.png', alt: 'Uthaya.fr' %>
+					<%= image_tag 'uthaya.png', alt: 'Uthaya.fr', title: 'Uthaya.fr' %>
 				</div>
 				<div class="blog-slider__content">
 					<div class="blog-slider__title">Uthaya.fr</div>
 					<div class="blog-slider__text d-none d-lg-block">Tamil professor and youtube creator, she sells her own course to learn tamil through french.</div>
-					<a href="http://uthaya.fr" class="blog-slider__button">Check It Out</a>
+					<a href="http://uthaya.fr" title="Uthaya.fr" class="blog-slider__button">Check It Out</a>
 				</div>
 			</div>
 
 			<div class="blog-slider__item swiper-slide">
 				<div class="blog-slider__img mr-4">
-					<%= image_tag 'youtransactor.jpg', alt: 'Youtransactor' %>
+					<%= image_tag 'youtransactor.jpg', alt: 'Youtransactor', title: 'Youtransactor' %>
 				</div>
 				<div class="blog-slider__content">
 					<div class="blog-slider__title">Youtransactor</div>
 					<div class="blog-slider__text d-none d-lg-block">Company website, manufactoring and seller of solutions for contraventions terminals and others</div>
-					<a href="https://youtransactor.com" class="blog-slider__button">Check It Out</a>
+					<a href="https://youtransactor.com" title="Youtransactor" class="blog-slider__button">Check It Out</a>
 				</div>
 			</div>
 		</div>
@@ -248,7 +248,7 @@
 											<br>Or do you just want to talk and get some advice? Get in touch.
 										</p>
 										<br>MAIL :
-										<a itemprop="email" href="mailto:lauren_d@outlook.fr">lauren_d@outlook.fr</a>
+										<a itemprop="email" title="Mail" href="mailto:lauren_d@outlook.fr">lauren_d@outlook.fr</a>
 									</div>
 									<div class="app-contact">CONTACT INFO : <span style="color: #ADE900">+33 6 12 80 12 58</span>
 									</div>

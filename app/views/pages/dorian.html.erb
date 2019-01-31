@@ -1,7 +1,7 @@
 <div id="page" class="hfeed site">
 	<header id="masthead" class="header" role="banner">
 
-		<a class="menu-toggle toggle-link mx-auto">
+		<a class="menu-toggle toggle-link mx-auto" title="Menu">
 			<span class="menu-icon__line mx-auto " style="margin-top: 15px; width: 30px !important;">
 			</span>
 			<span class="menu-icon__line mx-auto" style="width: 30px !important;">
@@ -15,7 +15,7 @@
 		</h1>
 
 		<div class="header-wrap">
-			<%= image_tag 'dorian.jpg', alt: 'Dorian Laurenceau' %>
+			<%= image_tag 'dorian.jpg', alt: 'Dorian Laurenceau', title: 'Dorian Laurenceau' %>
 
 			<h1 class="site-title ">
 				Dorian Laurenceau					
@@ -25,21 +25,21 @@
 				<div class="nav-menu">
 					<ul class="menu-auto">
 						<li class="">
-							<a href="#/home" data="home">
+							<a href="#/home" data="home" title="Home Page">
 								<i class="fas fa-home fa-2x	">
 								</i>
 								home
 							</a>
 						</li>
 						<li class="">
-							<a href="#/about-me" data="about-me">
+							<a href="#/about-me" title="About Me" data="about-me">
 								<i class="far fa-user-circle fa-2x	">
 								</i>
 								about me
 							</a>
 						</li>
 						<li class="">
-							<a href="#/resume" data="resume">
+							<a href="#/resume" title="Resume" data="resume">
 								<i class="far fa-address-card fa-2x	">
 								</i>
 								resume
@@ -47,7 +47,7 @@
 						</li>
 
 						<li class="">
-							<a href="#/contact" data="contact">
+							<a href="#/contact" title="Contact" data="contact">
 								<i class="fas fa-map-marker-alt fa-2x">
 								</i>
 								contact
@@ -79,19 +79,19 @@
 				<div class="textwidget">
 					<ul class="social">
 						<li>
-							<a target="_blank" class="facebook" href="#">
+							<a target="_blank" title="Page Facebook" class="facebook" href="https://www.facebook.com/lkdigital.eu/">
 								<i class="fab fa-facebook-f">
 								</i>
 							</a>
 						</li>
 						<li>
-							<a target="_blank" class="linkedin" href="#">
-								<i class="fab fa-linkedin">
+							<a target="_blank" class="twitter" title="Page Twitter" href="https://twitter.com/LKDigital_eu?lang=fr">
+								<i class="fab fa-twitter ">
 								</i>
 							</a>
 						</li>
 						<li>
-							<a target="_blank" class="instagram" href="#">
+							<a target="_blank" class="instagram" title="Page Instagram" href="https://www.instagram.com/lkdigital_eu/">
 								<i class="fab fa-instagram">
 								</i>
 							</a>
@@ -112,8 +112,8 @@
 
 	<div id="main" class="site-main">
 		<div id="home" class="pt-page page-layout home-section page-current">
-			<%= link_to root_path, class: 'centered' do %>
-			<%= image_tag 'LogoLKDigital.png', alt: 'logo lkdigital', id: 'height_logo' %>
+			<%= link_to root_path, class: 'centered', title: "LK Digital" do %>
+			<%= image_tag 'LogoLKDigital.png', alt: 'LK Digital', title: 'LK Digital', id: 'height_logo' %>
 			<% end %>
 			<div class="layout-medium centeredtext text-center">
 				<h2 style="font-weight: bold;">Dorian Laurenceau</h2>
@@ -135,7 +135,7 @@
 						<div class="col-sm-6 col-md-4">
 							<div class="service">
 								<p>
-									<%= image_tag 'icon-02.png', alt: 'icone web dev', class: "alignnone size-full" %>
+									<%= image_tag 'icon-02.png', alt: 'icone web dev', title: 'icone web dev', class: "alignnone size-full" %>
 								</p>
 								<h4>WEB DEV</h4>
 								<p>Creation and redesign of tailor-made websites: "showcases", institutional websites, online shops, blogs, forums, etc.
@@ -146,7 +146,7 @@
 						<div class="col-sm-6 col-md-4">
 							<div class="service">
 								<p>
-									<%= image_tag 'icon-03.png', alt: 'icone management', class: "alignnone size-full" %>
+									<%= image_tag 'icon-03.png', alt: 'icone management', title: 'icone management', class: "alignnone size-full" %>
 								</p>
 								<h4>MANAGEMENT</h4>
 								<p>For our collaboration to be effective, I inform you and remain available throughout the phases of the project.
@@ -156,7 +156,7 @@
 						<div class="col-sm-6 col-md-4">
 							<div class="service">
 								<p>
-									<%= image_tag 'icon-04.png', alt: 'icone problem solver', class: "alignnone size-full" %>
+									<%= image_tag 'icon-04.png', alt: 'icone problem solver', title: 'icone problem solver', class: "alignnone size-full" %>
 								</p>
 								<h4>PROBLEM SOLVER</h4>
 								<p>My experience gained through projects allows me to better understand the expectations of a client and to respond precisely to the need required according to the field of activity.
@@ -348,15 +348,6 @@
 								</div>
 							</div>
 							<div class="skill-unit">
-								<h4>NodeJs</h4>
-								<div class="bar" data-percent="60">
-									<div class="progress" style="width: 60%;">
-										<span>60</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="skill-unit">
 								<h4>Rails</h4>
 								<div class="bar" data-percent="80">
 									<div class="progress" style="width: 80%;">
@@ -411,12 +402,12 @@
 						<h2>Let’s Socialize</h2>
 					</div>
 					<ul class="social text-center">
-						<li><a target="_blank" class="facebook" href="https://www.facebook.com/dorian.laurenceau"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a target="_blank" class="facebook" title="Page Facebook Dorian" href="https://www.facebook.com/dorian.laurenceau"><i class="fab fa-facebook-f"></i></a></li>
 
-						<li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/laurenceau/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a target="_blank" class="linkedin" title="Page linkedin Dorian" href="https://www.linkedin.com/in/laurenceau/"><i class="fab fa-linkedin-in"></i></a></li>
 
 
-						<li><a target="_blank" class="instagram" href="https://www.instagram.com/dorian_lk/?hl=fr"><i class="fab fa-instagram"></i></a></li>
+						<li><a target="_blank" class="instagram" title="Page Instagram Dorian" href="https://www.instagram.com/dorian_lk/?hl=fr"><i class="fab fa-instagram"></i></a></li>
 
 
 					</ul>

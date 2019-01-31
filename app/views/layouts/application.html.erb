@@ -70,15 +70,15 @@
             <div class="flex-center float-right">
 
               <!-- Facebook -->
-              <a class="fb-ic" href="https://www.facebook.com/lkdigital.eu/">
+              <a class="fb-ic" title="Page Facebook" href="https://www.facebook.com/lkdigital.eu/">
                 <i class="fab fa-facebook-f fa-lg white-text mr-md-3 mr-2 "> </i>
               </a>
               <!-- Twitter -->
-              <a class="tw-ic" href="https://twitter.com/LKDigital_eu?lang=fr">
+              <a class="tw-ic" title="Page Twitter" href="https://twitter.com/LKDigital_eu?lang=fr">
                 <i class="fab fa-twitter fa-lg white-text mr-md-3 mr-2 "> </i>
               </a>
               <!--Instagram-->
-              <a class="ins-ic" href="https://www.instagram.com/lkdigital_eu/">
+              <a class="ins-ic" title="Page Instagram" href="https://www.instagram.com/lkdigital_eu/">
                 <i class="fab fa-instagram fa-lg white-text mr-md-3 mr-2 "> </i>
               </a>
             </div>
@@ -91,29 +91,29 @@
       </div>
       <% if current_page?('/dorian') %>
       <div class="footer-copyright text-center">
-        <a href="/" class="link-main">To the website</a>
-        <a href="/sopika" class="link-sop">Next</a>
+        <a href="/" title="Page Home" class="link-main">To the website</a>
+        <a href="/sopika" title="Resume Sopika" class="link-sop">Next</a>
       </div>
       <% end %>
       <% if current_page?('/sopika') %>
       <div class="footer-copyright text-center">
-        <a href="/dorian" class="link-main">Prev</a>
-        <a href="/" class="link-main">To the website</a>
-        <a href="/jananika" class="link-sop">Next</a>
+        <a href="/dorian" title="Resume Dorian" class="link-main">Prev</a>
+        <a href="/" title="Page Home" class="link-main">To the website</a>
+        <a href="/jananika" title="Resume Jananika" class="link-sop">Next</a>
       </div>
       <% end %>
       <% if current_page?('/jananika') %>
       <div class="footer-copyright text-center">
-        <a href="/sopika" class="link-main">Prev</a>
-        <a href="/" class="link-main">To the website</a>
-        <a href="/dorian" class="link-sop">Next</a>
+        <a href="/sopika" title="Resume Sopika" class="link-main">Prev</a>
+        <a href="/" title="Page Home" class="link-main">To the website</a>
+        <a href="/dorian" title="Resume Dorian" class="link-sop">Next</a>
       </div>
       <% end %>
       <!-- Footer Elements -->
       <% if current_page?('/') %>
       <!-- Copyright -->
       <div class="footer-copyright text-center">© 2019
-        <a href="mailto:lauren_d@outlook.fr"> lauren_d@outlook.fr</a>
+        <a href="mailto:lauren_d@outlook.fr" title="Mail"> lauren_d@outlook.fr</a>
       </div>
       <% end %>
 
