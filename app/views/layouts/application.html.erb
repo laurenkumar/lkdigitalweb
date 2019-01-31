@@ -17,17 +17,42 @@
   <% else %>
   <body class="bg-diff" >
     <% end %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js">
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js">
     </script>
-    <div id="particles-js"></div>
+    <div id="particles-js">
+    </div>
 
     <%= render 'shared/navbar' %>
 
+
+    <main itemscope="itemscope" itemtype="http://schema.org/Occupation" itemprop="http://schema.org/hasOccupation" style="min-height: 633px;">
+      <meta itemprop="name" content="Full-Stack Web Developper">
+      <meta itemprop="skills" content="PHP">
+      <meta itemprop="skills" content="HTML">
+      <meta itemprop="skills" content="CSS">
+      <meta itemprop="skills" content="JAVASCRIPT">
+      <meta itemprop="skills" content="RESPONSIVE">
+      <meta itemprop="skills" content="JQUERY">
+      <meta itemprop="skills" content="DRUPAL">
+      <meta itemprop="skills" content="NODEJS">
+      <meta itemprop="skills" content="RIOTJS">
+      <meta itemprop="skills" content="EXPRESS">
+      <meta itemprop="skills" content="MONGODB">
+      <meta itemprop="skills" content="REACT NATIVE">
+      <meta itemprop="skills" content="JAVA">
+      <meta itemprop="skills" content="SHOPIFY">
+      <meta itemprop="skills" content="WORDPRESS">
+      <meta itemprop="skills" content="MYSQL">
+      <meta itemprop="skills" content="SCSS">
+      <meta itemprop="skills" content="MOBILE">
     <%= yield %>
+    </main>
     <% if current_page?('/') %>
     <div class="mouse">
-      <div class="scroll"></div>
+      <div class="scroll">
+      </div>
     </div>
     <% end %>
 
