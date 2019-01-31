@@ -963,8 +963,12 @@ a {
 .city-navigation-wrapper {
   position: fixed;
   top: 50%;
-  right: 5px;
-  margin-top: -90px;
+  right: 24px;
+  right: 1rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
   z-index: $navigation;
   nav {
 
